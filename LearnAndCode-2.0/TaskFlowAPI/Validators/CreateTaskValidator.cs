@@ -16,7 +16,7 @@ namespace TaskFlowAPI.Validators;
 /// This class defines the validation rules for the `CreateTaskRequest` DTO.
 /// It inherits from `AbstractValidator<T>`, where `T` is the type of the object to be validated.
 /// FluentValidation will automatically discover this validator and apply it when a `CreateTaskRequest` is received by a controller.
-/// Week 8 scaffolding: implement validation rules with FluentValidation.
+/// Week 10 scaffolding: implement validation rules with FluentValidation.
 /// </summary>
 public class CreateTaskValidator : AbstractValidator<CreateTaskRequest>
 {
@@ -30,7 +30,7 @@ public class CreateTaskValidator : AbstractValidator<CreateTaskRequest>
         // RuleFor(x => x.Title).NotEmpty().WithMessage("Title is required.");
         // RuleFor(x => x.Title).MaximumLength(200).WithMessage("Title cannot be longer than 200 characters.");
 
-        // TODO Week 8: Add real rules (Title required, Priority range, DueDate validations, etc.).
-        // Leave empty for now so Week 2-7 assignments can run without validation blocking progress.
+        // TODO Week 10: Add real rules (Title required, Priority range, DueDate validations, etc.).
+        // Leave empty for now so Week 2-9 assignments can run without validation blocking progress.
     }
 }

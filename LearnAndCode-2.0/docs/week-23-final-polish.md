@@ -1,12 +1,16 @@
-# Week 21 · Final Polish & Presentation
+# Week 23 · Final Polish & Presentation
 
 ## 1. Learning Objectives
 - Deliver production-ready artifacts (code, docs, tests, demo).
 - Produce clear written and video documentation for stakeholders.
 - Reflect on end-to-end learning and identify next steps.
 
-## 2. Preparation (15 min)
-- Review README, weekly docs, and ensure terminology is consistent (21-week references, TaskFlow naming).
+## 2. Preparation & Reading (45 min)
+- Review README, weekly docs, and ensure terminology is consistent (23-week references, TaskFlow naming).
+- **Technical Documentation Best Practices** – Write the Docs guide.
+- **The Art of Writing Good Documentation** – Practical tips for clarity.
+- **Markdown Cheat Sheet** – Quick formatting reference.
+- Optional videos: Beth Aitman’s talks on effective documentation.
 - Skim final checklist below before starting.
 
 ## 3. This Week’s Work
@@ -23,7 +27,7 @@
 - Additional docs: `docs/final-retro.md` (create)
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-21/<your-name>`.
+1. Branch `week-23/<your-name>`.
 2. Run `dotnet build` and `dotnet test`—fix any lingering warnings.
 3. Review code for lingering smells or TODOs and clean up.
 4. Update README with:
@@ -47,21 +51,28 @@ dotnet test TaskFlowAPI.sln
 
 ## 7. Success Criteria
 - README is production-ready and up to date.
-- All docs reference 21-week program accurately.
+- All docs reference 23-week program accurately.
 - Demo video link accessible and under 5 minutes.
 - Tests pass; no warnings/errors on build.
 - Final retro completed.
 
 ## 8. Submission Process
-- Commit `Week 21 – final polish`.
+- Commit `Week 23 – final polish`.
 - PR summary includes demo video link and highlights final changes.
 - Weekly issue attaches final retro and test/build output.
 - Notify mentor in chat that final PR is ready for graduation review.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Polish Checklist:* Record outstanding TODOs you cleared and why they mattered most.
+
+*Demo Narrative:* Outline the story arc for your 5-minute demo (problem, solution, impact).
+
+Discussion Prep:
 - What part of TaskFlow API are you most proud of and why?
 - Where would you invest next if given two more weeks?
 - How did Clean Code principles change your default coding habits?
+- What risks remain for production readiness and how will you communicate them?
 
 ## 10. Time Estimate
 - 20 min – Build/test cleanup.

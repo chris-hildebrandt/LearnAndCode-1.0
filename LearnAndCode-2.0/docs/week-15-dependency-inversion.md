@@ -1,13 +1,16 @@
-# Week 13 · Dependency Inversion Principle (DIP)
+# Week 15 · Dependency Inversion Principle (DIP)
 
 ## 1. Learning Objectives
 - Invert dependencies so high-level modules depend on abstractions, not concrete implementations.
 - Introduce infrastructure abstractions (e.g., clock, cache) for future enhancements.
 - Audit constructors to ensure only interfaces are injected.
 
-## 2. Reading (10 min)
-- Review DIP section from SOLID guide.
-- Summary: Policies (services, controllers) must depend on abstractions. Details (EF Core, system clock, cache) implement those abstractions.
+## 2. Reading (45 min)
+- **Dependency Inversion Principle – Wikipedia** – Original definition and motivation.
+- **Principles.dev: Dependency Inversion** – Practical architectural guidance.
+- **Understanding DIP (Dev.to)** – Modern examples across stacks.
+- **OODesign: DIP Patterns** – How DIP relates to broader design strategies.
+- **Stackify: Dependency Inversion Principle** – Applied examples in C#.
 
 ## 3. This Week’s Work
 - Create `ISystemClock` abstraction (with production `UtcSystemClock`).
@@ -23,7 +26,7 @@
 - Update tests to use fake clock (`TaskFlowAPI.Tests` as needed)
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-13/<your-name>`.
+1. Branch `week-15/<your-name>`.
 2. Create `ISystemClock` with `DateTime UtcNow { get; }`.
 3. Implement `UtcSystemClock : ISystemClock` returning `DateTime.UtcNow`.
 4. Inject `ISystemClock` where `DateTime.UtcNow` is currently used (entity factory, business rules, service logging timestamps).
@@ -46,14 +49,21 @@ dotnet test TaskFlowAPI.sln
 - Build/tests succeed.
 
 ## 8. Submission Process
-- Commit `Week 13 – dependency inversion`.
+- Commit `Week 15 – dependency inversion`.
 - PR summary includes list of newly introduced abstractions.
 - Weekly issue documents how fake clock improved testability.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Abstraction Rationale:* Describe one concrete dependency you inverted and the runtime risk it mitigates.
+
+*Testing Impact:* How did fake or stub clocks/caches simplify tests this week?
+
+Discussion Prep:
 - What other infrastructure components might need abstractions (caching, email, etc.)?
 - How does DIP reduce coupling to external time or frameworks?
 - Did any parts remain concrete by choice? Explain why.
+- How will you ensure new abstractions don’t become leaky or over-engineered?
 
 ## 10. Time Estimate
 - 10 min – Identify concrete dependencies.

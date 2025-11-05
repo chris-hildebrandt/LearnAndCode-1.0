@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
@@ -56,7 +56,7 @@ namespace TaskFlowAPI.Migrations
             migrationBuilder.InsertData(
                 table: "Projects",
                 columns: new[] { "Id", "Description", "Name" },
-                values: new object[] { 1, "Seed data used during the course. Feel free to replace after Week 4.", "Sample Project" });
+                values: new object[] { 1, "Seed data used during the course. Feel free to replace after Week 6.", "Sample Project" });
 
             migrationBuilder.InsertData(
                 table: "Tasks",

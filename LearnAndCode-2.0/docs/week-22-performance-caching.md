@@ -1,14 +1,17 @@
-# Week 20 · Performance & Caching
+# Week 22 · Performance & Caching
 
 ## 1. Learning Objectives
 - Apply basic performance improvements (async, caching, response compression).
 - Instrument simple metrics/logs to validate impact.
 - Ensure caching invalidation flows through repository/service layers.
 
-## 2. Reading (15 min)
-- Microsoft docs on in-memory caching (`IMemoryCache`).
-- Article: “Async best practices in ASP.NET Core”.
-- Summary: Cache read-heavy endpoints, always invalidate on writes, avoid blocking calls.
+## 2. Reading (50 min)
+- **Clean Code Chapter 13: Concurrency** – Mindset for safe performance tweaks.
+- **Microsoft docs: In-memory caching (`IMemoryCache`).**
+- **Async best practices in ASP.NET Core.**
+- **Introduction to Concurrent Programming (Toptal)** – Optional concurrency refresher.
+- **MIT Concurrency Notes** – Optional deep dive for those investigating threading.
+- Optional videos: Concurrency Part 1 & Part 2 playlist for broader context.
 
 ## 3. This Week’s Work
 - Add in-memory caching for `GetAllTasksAsync` results (keyed by filter parameters + pagination).
@@ -24,7 +27,7 @@
 - Update tests to account for caching (e.g., verifying invalidation)
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-20/<your-name>`.
+1. Branch `week-22/<your-name>`.
 2. Design caching strategy: create abstraction `ITaskCache` to get/set cached `PagedResponse` by filter signature.
 3. Implement `MemoryTaskCache` using `IMemoryCache` with TTL (e.g., 60 seconds) and configurable options.
 4. Inject cache into `TaskService`; apply when fetching tasks.
@@ -48,14 +51,21 @@ dotnet test TaskFlowAPI.sln
 - Build/tests succeed; logs show cache activity.
 
 ## 8. Submission Process
-- Commit `Week 20 – caching & performance`.
+- Commit `Week 22 – caching & performance`.
 - PR summary includes caching strategy, TTL, and sample logs.
 - Weekly issue documents performance observations (stopwatch results optional).
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Cache Strategy:* Outline your cache key structure and invalidation triggers.
+
+*Async Audit:* Note any synchronous calls you replaced and the impact on readability/performance.
+
+Discussion Prep:
 - How did caching change the service design?
 - What risks exist if cache invalidation fails?
 - What metrics would you add in a production environment?
+- How will you test caching behaviour in automated builds?
 
 ## 10. Time Estimate
 - 15 min – Design caching strategy.

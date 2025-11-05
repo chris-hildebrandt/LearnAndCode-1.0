@@ -1,14 +1,17 @@
-# Week 9 · Single Responsibility Principle (SRP)
+# Week 11 · Single Responsibility Principle (SRP)
 
 ## 1. Learning Objectives
 - Identify and eliminate SRP violations within `TaskService`.
 - Extract mapping, validation, and business-rule logic into focused classes.
 - Update dependency injection to wire new components.
 
-## 2. Clean Code Reading (15 min)
-- Re-read **Clean Code Ch. 3 (Functions)** focusing on “do one thing” mantra.
-- Review SRP sections from SOLID cheat sheet (provided in cohort wiki).
-- Summary: Each class should have one reason to change. Split responsibilities across mapper, validator, and business rules.
+## 2. Reading (45 min)
+- **Clean Code Chapter 3 (Functions)** – Revisit the “do one thing” mantra.
+- **Single Responsibility Principle – Wikipedia** – Original definition and context.
+- **Single Responsibility in SOLID Design (GeeksforGeeks)** – Practical examples and pitfalls.
+- **Making the SRP Practical (HackerNoon)** – Strategies for untangling mixed responsibilities.
+- **Understanding SOLID: SRP (Dev.to)** – Additional code samples and anti-patterns.
+- Optional: **The Single Responsibility Principle Revisited** – Advanced heuristics for complex domains.
 
 ## 3. This Week’s Work
 - Extract `TaskMapper`, `TaskValidator` (domain-specific), and `TaskBusinessRules` from `TaskService`.
@@ -24,7 +27,7 @@
 - `TaskFlowAPI.Tests` examples if needed for namespace updates
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-09/<your-name>`.
+1. Branch `week-11/<your-name>`.
 2. Create folders `Services/Tasks/Validation` and `Services/Tasks/Rules` if they don’t exist.
 3. Move mapping logic into `TaskMapper` with methods like `ToDto`, `ToEntity`.
 4. Move domain validation (non-FluentValidation) into `TaskBusinessRules` (e.g., checking completion status transitions).
@@ -47,14 +50,21 @@ dotnet test TaskFlowAPI.sln
 - Build/tests succeed.
 
 ## 8. Submission Process
-- Commit `Week 09 – SRP refactor`.
+- Commit `Week 11 – SRP refactor`.
 - PR summary outlines classes extracted and reasons.
 - Weekly issue includes diagram or bullet list of new responsibilities.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Responsibility Audit:* Capture the smell or metric that convinced you a new class was warranted.
+
+*Dependency Impact:* Note any DI registration changes and how they affect testability.
+
+Discussion Prep:
 - What metric indicated `TaskService` was doing too much?
 - How did extraction change your approach to future unit tests?
 - Were there responsibilities you intentionally kept inside the service? Why?
+- What risks do new collaborators introduce (e.g., mapping drift, validation duplication)?
 
 ## 10. Time Estimate
 - 10 min – Identify responsibilities + plan.

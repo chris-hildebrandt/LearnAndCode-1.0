@@ -18,8 +18,8 @@ namespace TaskFlowAPI.Repositories.Interfaces;
 /// <summary>
 /// This is the ITaskRepository interface, which defines the contract for data access operations related to tasks.
 /// Any class that is responsible for saving, retrieving, or modifying task data in the database must implement this interface.
-/// Week 6 focus: implement this contract in <see cref="TaskRepository"/>.
-/// Week 12: students will segregate this interface into reader/writer variations.
+/// Week 8 focus: implement this contract in <see cref="TaskRepository"/>.
+/// Week 14: students will segregate this interface into reader/writer variations.
 /// </summary>
 public interface ITaskRepository
 {

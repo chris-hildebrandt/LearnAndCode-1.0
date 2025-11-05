@@ -23,13 +23,13 @@ public static class ExceptionMiddlewareExtensions
     /// <summary>
     /// This is the extension method. It adds a custom exception handler to the ASP.NET Core request pipeline.
     /// The `this WebApplication app` syntax is what makes it an extension method for the `WebApplication` class.
-    /// Week 8: Students enable global error handling using this extension method.
+    /// Week 10: Students enable global error handling using this extension method.
     /// For now it simply surfaces the default developer exception page.
     /// </summary>
     /// <param name="app">The WebApplication instance to configure.</param>
     public static void UseTaskFlowExceptionHandler(this WebApplication app)
     {
-        // TODO Week 8: Replace with custom exception handler middleware that translates domain exceptions into ProblemDetails responses.
+        // TODO Week 10: Replace with custom exception handler middleware that translates domain exceptions into ProblemDetails responses.
         
         // `app.UseExceptionHandler` registers a middleware that will catch unhandled exceptions.
         app.UseExceptionHandler(exceptionApp =>

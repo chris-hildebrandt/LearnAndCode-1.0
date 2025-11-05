@@ -15,7 +15,7 @@ namespace TaskFlowAPI.Services.Tasks.Filters;
 /// This class represents a composite filter that can hold and apply multiple ITaskFilter instances.
 /// It also implements the ITaskFilter interface, so from the outside, it looks just like a single filter.
 /// This allows a client to treat a single object and a composition of objects uniformly.
-/// Week 10: Combine multiple filters without modifying existing ones (Open/Closed Principle).
+/// Week 12: Combine multiple filters without modifying existing ones (Open/Closed Principle).
 /// </summary>
 public class CompositeTaskFilter : ITaskFilter
 {
@@ -43,10 +43,10 @@ public class CompositeTaskFilter : ITaskFilter
     /// <returns>True if the task matches all filters, otherwise false.</returns>
     public bool IsMatch(TaskEntity task)
     {
-        // This is a placeholder for the Week 10 assignment.
+        // This is a placeholder for the Week 12 assignment.
         // The goal is to implement the logic that iterates through all the filters in the `_filters` collection
         // and ensures that the `IsMatch` method of every single one returns true for the given task.
-        // TODO Week 10: Ensure all filters return true.
-        throw new NotImplementedException("Week 10: Implement CompositeTaskFilter.IsMatch");
+        // TODO Week 12: Ensure all filters return true.
+        throw new NotImplementedException("Week 12: Implement CompositeTaskFilter.IsMatch");
     }
 }

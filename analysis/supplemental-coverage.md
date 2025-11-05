@@ -19,12 +19,12 @@
 - **New Supplements:** Agile ceremony prompts in each doc, retro template (`L2-DOC-FINALRETRO`), TaskFlow REST client file, FluentValidation docs, repository/service architecture guides.
 
 ### Gaps / Changes
-- **Removed:** AI prompt engineering (Week 3) and Event-Driven Architecture (Week 24) no longer have equivalents; advanced Git deep dive collapsed into Week 4 optional refresh; learner submission samples removed.
+- **Removed:** Event-Driven Architecture (Week 24) no longer has an equivalent; advanced Git deep dive collapsed into Week 6 optional refresh; learner submission samples removed.
 - **Condensed:** Objects & data structures split across Weeks 5–7; error handling merged into single intensive Week 8; design patterns now one week with layered refactors.
 - **Added Focus:** TaskFlow-specific instructions on migrations, DI, validation, testing; weekly journals embed reflective practice reducing need for standalone supplemental files.
 
 ### Recommendations
-- If AI or Event-Driven content remains strategic, add optional appendices or bonus weeks to 2.0 docs.
+- If Event-Driven content remains strategic, add optional appendices or bonus weeks to 2.0 docs.
 - Consider providing exemplar submissions or annotated diffs similar to 1.0 to model expectations.
 - Ensure condensed topics still reference original Clean Code chapters to prevent gaps (e.g., reaffirm coverage for Ch.6 in Week 10/11 mapping).
 

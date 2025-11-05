@@ -7,21 +7,21 @@ namespace TaskFlowAPI.Entities;
 
 /// <summary>
 /// Represents a single task record in the database. This is a direct mapping to the `Tasks` table.
-/// Week 5 scaffolding: this entity is intentionally anemic so students can add encapsulation.
+/// Week 7 scaffolding: this entity is intentionally anemic so students can add encapsulation.
 /// Right now everything is public and there is almost no behavior.
-/// By the end of Week 5 this class should expose private state, guard invariants,
+/// By the end of Week 7 this class should expose private state, guard invariants,
 /// and provide methods for domain behaviors (complete, reschedule, reprioritize, etc.).
 /// </summary>
 public class TaskEntity
 {
-    // TODO Week 5: Replace these auto-properties with properly encapsulated members.
+    // TODO Week 7: Replace these auto-properties with properly encapsulated members.
     
     /// <summary>
     /// The unique identifier and Primary Key for the task.
     /// </summary>
     public int Id { get; set; }
 
-    // TODO Week 5: Enforce non-empty titles and move validation into rich domain behavior.
+    // TODO Week 7: Enforce non-empty titles and move validation into rich domain behavior.
     /// <summary>
     /// The title of the task. This is a required field.
     /// </summary>
@@ -32,7 +32,7 @@ public class TaskEntity
     /// </summary>
     public string? Description { get; set; }
 
-    // TODO Week 5: Replace primitive priority with value object or guarded property.
+    // TODO Week 7: Replace primitive priority with value object or guarded property.
     /// <summary>
     /// A numerical priority for the task.
     /// </summary>
@@ -75,5 +75,5 @@ public class TaskEntity
     /// </summary>
     public ProjectEntity? Project { get; set; }
 
-    // TODO Week 5: Add domain behaviors like Complete, Reopen, UpdateDetails, etc.
+    // TODO Week 7: Add domain behaviors like Complete, Reopen, UpdateDetails, etc.
 }

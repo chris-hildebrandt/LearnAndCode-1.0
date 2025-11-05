@@ -13,7 +13,7 @@ namespace TaskFlowAPI.DTOs.Responses;
 /// <summary>
 /// A generic wrapper for sending paginated API responses.
 /// It includes not only the data for the current page but also metadata about the pagination itself.
-/// Generic response for paginated data. Will be implemented in Week 11.
+/// Generic response for paginated data. Will be implemented in Week 13.
 /// </summary>
 /// <typeparam name="T">The type of the data items being paginated.</typeparam>
 public class PagedResponse<T>

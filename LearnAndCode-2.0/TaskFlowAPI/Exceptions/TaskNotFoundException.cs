@@ -15,7 +15,7 @@ namespace TaskFlowAPI.Exceptions;
 /// <summary>
 /// Represents an error that occurs when a requested task cannot be found.
 /// This allows for specific handling of "not found" scenarios in the application, typically resulting in an HTTP 404 response.
-/// Week 8: thrown when a task is not found. Provides consistent error handling for the API.
+/// Week 10: thrown when a task is not found. Provides consistent error handling for the API.
 /// </summary>
 public class TaskNotFoundException : Exception
 {

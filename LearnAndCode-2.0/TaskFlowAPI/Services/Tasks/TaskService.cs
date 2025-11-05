@@ -18,8 +18,8 @@ namespace TaskFlowAPI.Services.Tasks;
 /// This is the concrete implementation of the ITaskService interface.
 /// It contains the actual business logic for managing tasks.
 /// It depends on the ITaskRepository to interact with the database and ILogger to log information.
-/// Week 7 scaffolding: methods throw until students implement them using repository + mapping helpers.
-/// Week 9: students will refactor mapper/validator logic into dedicated classes.
+/// Week 9 scaffolding: methods throw until students implement them using repository + mapping helpers.
+/// Week 11: students will refactor mapper/validator logic into dedicated classes.
 /// </summary>
 public class TaskService : ITaskService
 {
@@ -38,43 +38,43 @@ public class TaskService : ITaskService
     /// <summary>
     /// This method will contain the logic to get all tasks.
     /// It implements the GetAll method defined in the ITaskService interface.
-    /// TODO Week 7: Fetch all tasks, map to DTOs, and return as read-only list.
+    /// TODO Week 9: Fetch all tasks, map to DTOs, and return as read-only list.
     /// Steps provided in assignment doc.
     /// </summary>
     public Task<List<TaskDto>> GetAll(CancellationToken cancellationToken = default)
     {
         // This line is a placeholder. It throws an exception to indicate that the method hasn't been implemented yet.
-        // In Week 7, you will replace this with the actual logic to fetch tasks from the repository.
-        throw new NotImplementedException("Week 7: Implement GetAll and return TaskDto list.");
+        // In Week 9, you will replace this with the actual logic to fetch tasks from the repository.
+        throw new NotImplementedException("Week 9: Implement GetAll and return TaskDto list.");
     }
 
     /// <summary>
     /// This method will contain the logic to get a single task by its ID.
     /// It implements the Get method defined in the ITaskService interface.
-    /// TODO Week 7: Fetch a single task. Throw or return null when not found (see doc for guidance).
+    /// TODO Week 9: Fetch a single task. Throw or return null when not found (see doc for guidance).
     /// </summary>
     public Task<TaskDto?> Get(int id, CancellationToken cancellationToken = default)
     {
-        // This is a placeholder. You will implement the logic to fetch a specific task in Week 7.
-        throw new NotImplementedException("Week 7: Implement Get and handle not-found behavior.");
+        // This is a placeholder. You will implement the logic to fetch a specific task in Week 9.
+        throw new NotImplementedException("Week 9: Implement Get and handle not-found behavior.");
     }
 
     /// <summary>
     /// This method will contain the logic to create a new task.
     /// It implements the Add method defined in the ITaskService interface.
-    /// TODO Week 7: Validate request (temporary inline validation).
-    /// Week 8 adds FluentValidation + custom exceptions.
+    /// TODO Week 9: Validate request (temporary inline validation).
+    /// Week 10 adds FluentValidation + custom exceptions.
     /// </summary>
     public Task<TaskDto> Add(CreateTaskRequest request, CancellationToken cancellationToken = default)
     {
-        // This is a placeholder. You will implement the logic to add a new task in Week 7.
-        throw new NotImplementedException("Week 7: Implement Add to create a new task.");
+        // This is a placeholder. You will implement the logic to add a new task in Week 9.
+        throw new NotImplementedException("Week 9: Implement Add to create a new task.");
     }
 
     // Helper methods are used to encapsulate logic that is repeated within a class.
     // These two methods handle the conversion between database "Entity" objects and "DTO" (Data Transfer Objects).
     // This is an important separation: Entities map to the database, while DTOs map to what the outside world (the client) sees.
-    // Helper methods intentionally private for Week 9 extraction into TaskMapper / TaskValidator classes.
+    // Helper methods intentionally private for Week 11 extraction into TaskMapper / TaskValidator classes.
     
     /// <summary>
     /// Maps a TaskEntity (database object) to a TaskDto (data transfer object).

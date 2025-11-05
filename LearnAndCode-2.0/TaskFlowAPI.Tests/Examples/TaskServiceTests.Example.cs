@@ -25,7 +25,7 @@ public class TaskServiceTestsExample
 {
     // The `[Fact]` attribute from xUnit marks this method as a test. The test runner will discover and execute it.
     // The `Skip` property tells the test runner to ignore this test. This is useful for example tests or tests that are temporarily broken.
-    [Fact(Skip = "Example only - Week 7 students will create their own passing tests.")]
+    [Fact(Skip = "Example only - Week 17 students will create their own passing tests.")]
     // Test method names should be descriptive and clearly state what they are testing and the expected outcome.
     // A common pattern is `MethodName_ExpectedBehavior_WhenCondition`.
     public async Task CreateTask_AddsTask_WhenRequestIsValid()
@@ -64,7 +64,7 @@ public class TaskServiceTestsExample
         var service = new TaskService(repositoryMock.Object, loggerMock.Object);
 
         // ACT: In this section, we execute the method we want to test.
-        // (Week 7 students will remove exception by implementing Add)
+        // (Week 9 students will remove exception by implementing Add; Week 17 tests will make it pass)
         var result = await service.Add(request);
 
         // ASSERT: In this section, we verify that the outcome of the `Act` step was correct.

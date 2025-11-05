@@ -104,7 +104,7 @@ public class TaskFlowDbContext : DbContext
             {
                 Id = 1,
                 Name = "Sample Project",
-                Description = "Seed data used during the course. Feel free to replace after Week 4."
+                Description = "Seed data used during the course. Feel free to replace after Week 6."
             }
         );
 

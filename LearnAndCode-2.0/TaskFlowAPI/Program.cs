@@ -50,10 +50,10 @@ builder.Services.AddDbContext<TaskFlowDbContext>(options =>
 // We register our repository and service layers here.
 // `AddScoped` means that a new instance of the service will be created once per client request.
 
-// Repository Layer (Week 6)
+// Repository Layer (Week 8)
 builder.Services.AddScoped<ITaskRepository, TaskRepository>();
 
-// Service Layer (Week 7)
+// Service Layer (Week 9)
 builder.Services.AddScoped<ITaskService, TaskService>();
 
 // This registers FluentValidation services, allowing it to automatically find and run our validators.
@@ -63,8 +63,8 @@ builder.Services.AddFluentValidationClientsideAdapters();
 builder.Services.AddMemoryCache(); // Adds a default in-memory cache service.
 builder.Services.AddResponseCompression(); // Adds services for compressing HTTP responses.
 
-// TODO Week 9: Register TaskMapper and validators once extracted
-// TODO Week 10: Register task filter strategies and composite filter
+// TODO Week 11: Register TaskMapper and validators once extracted
+// TODO Week 12: Register task filter strategies and composite filter
 
 // --- Build the Application ---
 // The `builder.Build()` method creates the actual web application instance (`app`)

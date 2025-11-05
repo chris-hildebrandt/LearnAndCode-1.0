@@ -1,13 +1,17 @@
-# Week 17 · Essential Design Patterns
+# Week 19 · Essential Design Patterns
 
 ## 1. Learning Objectives
 - Implement Factory pattern for creating tasks with context-aware defaults.
 - Review and solidify Strategy pattern usage (filters) and Repository pattern.
 - Document when each pattern is appropriate within TaskFlow API.
 
-## 2. Reading (15 min)
-- Review Factory and Strategy patterns (Refactoring.Guru or Head First Design Patterns summaries).
-- Summary: Factories encapsulate object creation logic; strategies encapsulate interchangeable behaviours.
+## 2. Reading (50 min)
+- **Patterns.dev** – Browse sections on creational and behavioural patterns.
+- **Refactoring Guru: Design Patterns** – Reference implementations and UML diagrams.
+- **Sourcemaking: Design Patterns** – Additional explanations with variations.
+- **Tutorialspoint Design Patterns Overview** – Quick refresher on categories.
+- **YouTube: 10 Design Patterns Explained in 10 Minutes** (optional, 10 min) – High-level tour.
+- Focus on Factory & Strategy sections as they align with this week’s work.
 
 ## 3. This Week’s Work
 - Create `TaskFactory` responsible for constructing `TaskEntity` instances based on request type (default due dates, priority rules).
@@ -22,7 +26,7 @@
 - `docs/` add short explanation snippet if relevant
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-17/<your-name>`.
+1. Branch `week-19/<your-name>`.
 2. Design `TaskFactory` with methods like `CreateNewTask(CreateTaskRequest request, ISystemClock clock)` returning a fully initialised entity.
 3. Move creation logic (default priority, CreatedAt) from mapper/business rules into factory.
 4. Update `TaskService` to call factory before saving; ensure tests updated to mock factory.
@@ -44,14 +48,21 @@ dotnet test TaskFlowAPI.sln
 - Build/tests succeed.
 
 ## 8. Submission Process
-- Commit `Week 17 – design patterns`.
+- Commit `Week 19 – design patterns`.
 - PR summary lists patterns implemented/refined and rationale.
 - Weekly issue includes short paragraph on when to use Factory vs. Strategy.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Pattern Selection:* Document why you chose factory vs. keeping logic in mapper/business rules.
+
+*Future Pattern Ideas:* Note one additional pattern you considered and whether it fits the current scope.
+
+Discussion Prep:
 - How did the factory improve creation logic clarity?
 - What trade-offs exist when adding more patterns?
 - Which future features could reuse this factory?
+- How will you guard against over-patterning the codebase?
 
 ## 10. Time Estimate
 - 10 min – Pattern review + design.

@@ -1,13 +1,16 @@
-# Week 12 · Interface Segregation Principle (ISP)
+# Week 14 · Interface Segregation Principle (ISP)
 
 ## 1. Learning Objectives
 - Split “fat” interfaces into focused contracts.
 - Update implementations and consumers to depend only on what they use.
 - Ensure DI configuration honours the new abstractions.
 
-## 2. Reading (10 min)
-- Review ISP section from SOLID guide (clients should not be forced to depend on methods they do not use).
-- Summary: Break `ITaskRepository` into read/write interfaces so services/controllers depend on minimal contracts.
+## 2. Reading (40 min)
+- **Interface Segregation Principle – Wikipedia** – Origin and definition.
+- **SOLID I: Interface Segregation (Dev.to)** – Practical examples and refactoring steps.
+- **Interface Segregation in C# (ByteHide)** – .NET-focused guidance.
+- **Interface Segregation in TypeScript (LinkedIn)** – Alternate language perspective.
+- **OODesign: ISP Patterns** – How ISP aligns with broader design patterns.
 
 ## 3. This Week’s Work
 - Create `ITaskReader` and `ITaskWriter` interfaces.
@@ -22,7 +25,7 @@
 - `TaskFlowAPI/Program.cs`
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-12/<your-name>`.
+1. Branch `week-14/<your-name>`.
 2. Create new interfaces:
    - `ITaskReader`: `GetAllAsync`, `GetByIdAsync`.
    - `ITaskWriter`: `CreateAsync`, `UpdateAsync`, `DeleteAsync`.
@@ -45,14 +48,21 @@ dotnet test TaskFlowAPI.sln
 - Tests compile and pass with new abstractions.
 
 ## 8. Submission Process
-- Commit `Week 12 – interface segregation`.
+- Commit `Week 14 – interface segregation`.
 - PR summary explains who consumes reader vs. writer.
 - Weekly issue includes diagram or table of dependencies after refactor.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Interface Audit:* List one consumer and the minimal interface it now depends on.
+
+*Dependency Graph:* Sketch how DI registrations changed; note any surprising impacts.
+
+Discussion Prep:
 - What benefits did you notice after splitting interfaces?
 - Could any service depend on only `ITaskReader` now?
 - Where else could ISP apply in this codebase?
+- What migration steps would be required if you introduced additional specialised writers/readers later?
 
 ## 10. Time Estimate
 - 10 min – Plan new interfaces.

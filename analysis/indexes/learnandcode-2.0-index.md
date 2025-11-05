@@ -2,7 +2,7 @@
 
 | Chunk ID | Path | Type | Focus | Key Links / Notes |
 | --- | --- | --- | --- | --- |
-| L2-SUP-README | `LearnAndCode-2.0/README.md` | Overview | 21-week TaskFlow API curriculum roadmap | Highlights phases, deliverables, expectations. |
+| L2-SUP-README | `LearnAndCode-2.0/README.md` | Overview | 23-week TaskFlow API curriculum roadmap | Highlights phases, deliverables, expectations. |
 | L2-SUP-SETUP | `LearnAndCode-2.0/SETUP.md` | Setup Guide | Environment checklist for TaskFlow API | Includes tooling prerequisites. |
 | L2-SUP-WKPROG | `LearnAndCode-2.0/WEEKLY_PROGRESS.md` | Tracking | Completion tracker | Used weekly for accountability. |
 | L2-SUP-LLM | `LearnAndCode-2.0/llm.txt` | Policy | AI usage guidance / prompts | Defines AI collaboration rules. |
@@ -11,25 +11,27 @@
 | L2-SUP-SLN | `LearnAndCode-2.0/TaskFlowAPI.sln` | Solution | Visual Studio solution file | Entry point for TaskFlow API + tests. |
 | L2-DOC-W01 | `LearnAndCode-2.0/docs/week-01-introduction.md` | Weekly Doc | Orientation, manifesto deep dive, environment setup | Includes journal, discussion prep, testing instructions. |
 | L2-DOC-W02 | `LearnAndCode-2.0/docs/week-02-meaningful-names.md` | Weekly Doc | Naming standards applied to TaskFlow | Contains assignments, review prompts. |
-| L2-DOC-W03 | `LearnAndCode-2.0/docs/week-03-functions-comments.md` | Weekly Doc | Functions & comments best practices | Tailored to API refactoring tasks. |
-| L2-DOC-W04 | `LearnAndCode-2.0/docs/week-04-git-workflow.md` | Weekly Doc | Git workflow, branching around TaskFlow | Integrates standups + retro prompts. |
-| L2-DOC-W05 | `LearnAndCode-2.0/docs/week-05-classes-encapsulation.md` | Weekly Doc | Entities, encapsulation in API domain | Introduces EF Core modeling tasks. |
-| L2-DOC-W06 | `LearnAndCode-2.0/docs/week-06-repository-pattern.md` | Weekly Doc | Repository pattern implementation | Connects to `TaskRepository`. |
-| L2-DOC-W07 | `LearnAndCode-2.0/docs/week-07-service-layer-dtos.md` | Weekly Doc | Service layer design, DTO mapping | Focus on service composition. |
-| L2-DOC-W08 | `LearnAndCode-2.0/docs/week-08-error-handling-validation.md` | Weekly Doc | Validation + global error handling | Introduces FluentValidation + middleware. |
-| L2-DOC-W09 | `LearnAndCode-2.0/docs/week-09-single-responsibility.md` | Weekly Doc | SOLID SRP applied to API modules | Audits responsibilities across layers. |
-| L2-DOC-W10 | `LearnAndCode-2.0/docs/week-10-open-closed-principle.md` | Weekly Doc | OCP in TaskFlow | Extensibility strategies. |
-| L2-DOC-W11 | `LearnAndCode-2.0/docs/week-11-liskov-substitution.md` | Weekly Doc | LSP enforcement | Interface contracts and inheritance. |
-| L2-DOC-W12 | `LearnAndCode-2.0/docs/week-12-interface-segregation.md` | Weekly Doc | ISP on services/repos | Encourages granular interfaces. |
-| L2-DOC-W13 | `LearnAndCode-2.0/docs/week-13-dependency-inversion.md` | Weekly Doc | DIP & dependency injection | Aligns with .NET DI container. |
-| L2-DOC-W14 | `LearnAndCode-2.0/docs/week-14-file-organization.md` | Weekly Doc | File organization, modular architecture | Focus on cleanup & structure. |
-| L2-DOC-W15 | `LearnAndCode-2.0/docs/week-15-unit-testing-tdd.md` | Weekly Doc | Unit testing & TDD pipeline | Connects to `TaskFlowAPI.Tests` scaffolding. |
-| L2-DOC-W16 | `LearnAndCode-2.0/docs/week-16-code-smells-refactoring.md` | Weekly Doc | Smell catalog, refactoring plan | Targets known issues in codebase. |
-| L2-DOC-W17 | `LearnAndCode-2.0/docs/week-17-design-patterns.md` | Weekly Doc | Design patterns aligned to TaskFlow | Encourages strategic refactors. |
-| L2-DOC-W18 | `LearnAndCode-2.0/docs/week-18-code-review-collaboration.md` | Weekly Doc | Code review etiquette, retrospectives | Provides standup prompts. |
-| L2-DOC-W19 | `LearnAndCode-2.0/docs/week-19-api-design-documentation.md` | Weekly Doc | API design, documentation, versioning | Includes Swagger + docs tasks. |
-| L2-DOC-W20 | `LearnAndCode-2.0/docs/week-20-performance-caching.md` | Weekly Doc | Performance tuning, caching strategy | Targets API efficiency upgrades. |
-| L2-DOC-W21 | `LearnAndCode-2.0/docs/week-21-final-polish.md` | Weekly Doc | Final polish, demo prep, retrospectives | Wrap-up tasks + success criteria. |
+| L2-DOC-W03 | `LearnAndCode-2.0/docs/week-03-comments-documentation.md` | Weekly Doc | Comment hygiene & documentation mindset | Builds on Week 2 renames. |
+| L2-DOC-W04 | `LearnAndCode-2.0/docs/week-04-functions.md` | Weekly Doc | Function refactors, update/delete endpoints | Introduces helper extraction + HTTP semantics. |
+| L2-DOC-W05 | `LearnAndCode-2.0/docs/week-05-ai-tools.md` | Weekly Doc | AI tooling & prompt engineering | Experiments aligned to TaskFlow use cases. |
+| L2-DOC-W06 | `LearnAndCode-2.0/docs/week-06-git-workflow.md` | Weekly Doc | Branching workflow, PR practice | Emphasises review-ready commits. |
+| L2-DOC-W07 | `LearnAndCode-2.0/docs/week-07-classes-encapsulation.md` | Weekly Doc | Entities & encapsulation | Introduces rich domain behaviours. |
+| L2-DOC-W08 | `LearnAndCode-2.0/docs/week-08-repository-pattern.md` | Weekly Doc | Repository pattern implementation | Connects to `TaskRepository`. |
+| L2-DOC-W09 | `LearnAndCode-2.0/docs/week-09-service-layer-dtos.md` | Weekly Doc | Service layer design, DTO mapping | Focus on orchestration + logging. |
+| L2-DOC-W10 | `LearnAndCode-2.0/docs/week-10-error-handling-validation.md` | Weekly Doc | Validation & global error handling | Introduces FluentValidation + middleware. |
+| L2-DOC-W11 | `LearnAndCode-2.0/docs/week-11-single-responsibility.md` | Weekly Doc | SRP refactors across services | Mapper/validator extraction plan. |
+| L2-DOC-W12 | `LearnAndCode-2.0/docs/week-12-open-closed-principle.md` | Weekly Doc | OCP via filter strategies | Extensibility without modification. |
+| L2-DOC-W13 | `LearnAndCode-2.0/docs/week-13-liskov-substitution.md` | Weekly Doc | LSP contract testing | Ensures repository/service substitution. |
+| L2-DOC-W14 | `LearnAndCode-2.0/docs/week-14-interface-segregation.md` | Weekly Doc | ISP on repositories/services | Splits reader vs writer dependencies. |
+| L2-DOC-W15 | `LearnAndCode-2.0/docs/week-15-dependency-inversion.md` | Weekly Doc | DIP & infrastructure abstractions | Introduces clocks/caches via interfaces. |
+| L2-DOC-W16 | `LearnAndCode-2.0/docs/week-16-file-organization.md` | Weekly Doc | File/namespace organisation | Moves DI wiring into extensions. |
+| L2-DOC-W17 | `LearnAndCode-2.0/docs/week-17-unit-testing-tdd.md` | Weekly Doc | Unit testing & TDD pipeline | Targets ≥80% coverage. |
+| L2-DOC-W18 | `LearnAndCode-2.0/docs/week-18-code-smells-refactoring.md` | Weekly Doc | Smell catalog & refactoring plan | Drives before/after documentation. |
+| L2-DOC-W19 | `LearnAndCode-2.0/docs/week-19-design-patterns.md` | Weekly Doc | Design patterns applied to TaskFlow | Introduces factory + strategy enhancements. |
+| L2-DOC-W20 | `LearnAndCode-2.0/docs/week-20-code-review-collaboration.md` | Weekly Doc | Code review etiquette, retrospectives | Provides standup prompts + review log. |
+| L2-DOC-W21 | `LearnAndCode-2.0/docs/week-21-api-design-documentation.md` | Weekly Doc | API design, documentation, versioning | Includes Swagger + docs tasks. |
+| L2-DOC-W22 | `LearnAndCode-2.0/docs/week-22-performance-caching.md` | Weekly Doc | Performance tuning, caching strategy | Targets API efficiency upgrades. |
+| L2-DOC-W23 | `LearnAndCode-2.0/docs/week-23-final-polish.md` | Weekly Doc | Final polish, demo prep, retrospectives | Wrap-up tasks + success criteria. |
 | L2-DOC-EX01 | `LearnAndCode-2.0/docs/Examples/MeaningfulNames.md` | Example | Naming improvements example (Task DTO focus) | Supports Week 2 doc. |
 | L2-DOC-FINALRETRO | `LearnAndCode-2.0/docs/final-retro-template.md` | Template | Retrospective template | Used in Phase 5 retro. |
 | L2-DOC-IMG | `LearnAndCode-2.0/docs/image.png` | Asset | Screenshot for setup / codespaces | Referenced in Week 1 doc. |
