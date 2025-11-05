@@ -1,0 +1,88 @@
+
+## Week 5: GIT - Version Control Tasks  
+In this section, we will provide examples of common version control tasks that you will encounter while working on your project.
+
+### Table of Contents  
+- Example 1: Branching  
+- Example 2: Merging  
+- Example 3: Conflict Resolution  
+- Example 4: Reviewing Your Branching Strategy  
+
+---
+
+### **Example 1: Branching**  
+Branching allows to work on different features or fixes simultaneously without affecting the main codebase. To create and switch to a new branch:
+
+1. **Create a New Branch**  
+
+   git checkout -b new-feature
+   
+   This creates and switches to the `new-feature` branch.
+
+2. **List Branches**  
+ 
+   git branch
+
+   This command will display a list of all the branches in your repository.
+
+3. **Switch Between Branches**  
+
+   git checkout main
+
+   This switches you back to the `main` branch. You can replace `main` with any other branch you want to switch to.
+
+---
+
+### **Example 2: Merging**  
+Merging combines changes from two branches into a single branch. When working on a feature branch, after completing the work, merge it back into the main branch:
+
+1. **Merge Changes from Another Branch**  
+   Switch to the branch you want to merge into (usually `main`) and run:
+  
+   git checkout main
+   git merge new-feature
+ 
+   This merges the `new-feature` branch into `main`.
+
+2. **Handle Merge Conflicts**  
+   If changes conflict (i.e., both branches modified the same lines), Git will mark the file as conflicted. You can resolve the conflict manually:
+   - Open the conflicted file, and choose the correct changes between the `<<<<< HEAD` and `=====`.
+   - After resolving the conflict, add the resolved files:
+   
+     git add <conflicted-file>
+     git commit -m "Resolved merge conflict"
+  
+
+---
+
+### **Example 3: Conflict Resolution**  
+Merge conflicts occur when two branches modify the same lines of code. Here’s how to handle conflicts:
+
+1. **Start the Merge Process**  
+   If you are merging branches and encounter conflicts:
+ 
+   git merge feature-branch
+
+
+2. **List Conflicted Files**  
+   Git will tell you which files have conflicts. You can use:
+
+   git status
+
+   It will show you files in the "unmerged" state.
+
+3. **Resolve the Conflict**  
+   - Open each conflicted file and look for `<<<<<<< HEAD` and `=======` markers.
+   - Choose which changes to keep, or combine them as necessary.
+   - After resolving the conflicts, add the resolved files to the staging area:
+    
+     git add <file-name>
+
+
+4. **Commit the Merge**  
+   Once all conflicts are resolved, commit the changes:
+   
+   git commit -m "Merged feature-branch into main"
+
+
+

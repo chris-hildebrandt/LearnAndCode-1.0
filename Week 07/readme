@@ -1,0 +1,90 @@
+I like the idea for personal checklist of items that are your typical items found during code reviews.
+
+Which code is easier to read a) or b)? This goes to readability during a reviw and being forced to formatters.
+
+a)
+use DBStats
+GO
+SELECT sql_text, database_name, DATEPART(MM, TimeStamp) AS Month, DATEPART(DAY, TimeStamp) AS Day, username AS Username,
+    -- DATEPART(DAY, TimeStamp) AS DAY,
+    COUNT(sql_text) AS Num_Executes, MIN(Duration_Min) AS Min_Duration_min, AVG(Duration_Min) AS Avg_Duration_min, MAX(Duration_Min) AS Max_Duration_min, SUM(Duration_Min) AS Sum_Duration_min, MIN(Cpu_Time) AS Min_Cpu_Time, AVG(Cpu_Time) AS Avg_Cpu_Time, MAX(Cpu_Time) AS Max_Cpu_Time, SUM(Cpu_Time) AS Sum_Cpu_Time, SUM(Cpu_Time)/ 1000/1000/60 AS Sum_Cpu_Time_Min, MIN(Physical_Reads) AS Min_Physical_Reads, AVG(Physical_Reads) AS Avg_Physical_Reads, MAX(Physical_Reads) AS Max_Physical_Reads, SUM(Physical_Reads) AS Sum_Physical_Reads, MIN(Logical_Reads) AS Min_Logical_Reads, AVG(Logical_Reads) AS Avg_Logical_Reads, MAX(Logical_Reads) AS Max_Logical_Reads, SUM(Logical_Reads) AS Sum_Logical_Reads, MIN(Writes) AS Min_Writes, AVG(Writes) AS Avg_Writes, MAX(Writes) AS Max_Writes, SUM(Writes) AS Sum_Writes, MIN(Writes) AS Min_db_spills, AVG(Writes) AS Avg_db_spills, MAX(Writes) AS Max_db_spills, SUM(Writes) AS Sum_db_spills, MIN(Row_Count) AS Min_Row_Count, AVG(Row_Count) AS Avg_Row_Count, MAX(Row_Count) AS Max_Row_Count, SUM(Row_Count) AS Sum_Row_Count
+FROM [dbo].[DBA_MonitorInstance_MoreThanFiveMinutes]
+WHERE
+--      sql_text LIKE '%FG_Repository%' OR sql_text LIKE '%FG_Repository%'
+sql_text LIKE '%Accrual_Detail%'
+GROUP BY sql_text, database_name, DATEPART(MM, TimeStamp), DATEPART(DAY, TimeStamp), username
+-- DATEPART(DAY, TimeStamp)
+-- DATEPART(DAY, TimeStamp)
+--ORDER BY Day desc, SQL_Text asc, Max_Duration_min desc
+--ORDER BY WEEK desc, SQL_Text asc
+-- ORDER BY Sum_Cpu_Time desc
+-- ORDER BY Day asc, Sum_Cpu_Time desc, SQL_Text asc
+-- ORDER BY Day desc, SQL_Text asc, Sum_Cpu_Time desc
+ORDER BY Month DESC,
+Day DESC,
+Max_Duration_min DESC;
+--         Sum_Cpu_Time desc, 
+--         SQL_Text asc;
+
+b)
+use DBStats
+GO
+SELECT  sql_text,
+        database_name,
+        DATEPART(MM, TimeStamp)           AS Month,
+        DATEPART(DAY, TimeStamp)          AS Day,
+        username                          AS Username,
+        -- DATEPART(DAY, TimeStamp) AS DAY,
+        COUNT(sql_text)                   AS Num_Executes,
+        MIN(Duration_Min)                 AS Min_Duration_min,
+        AVG(Duration_Min)                 AS Avg_Duration_min,
+        MAX(Duration_Min)                 AS Max_Duration_min,
+        SUM(Duration_Min)                 AS Sum_Duration_min,
+        MIN(Cpu_Time)                     AS Min_Cpu_Time,
+        AVG(Cpu_Time)                     AS Avg_Cpu_Time,
+        MAX(Cpu_Time)                     AS Max_Cpu_Time,
+        SUM (Cpu_Time)                    AS Sum_Cpu_Time,
+        SUM (Cpu_Time)/ 1000/1000/60      AS Sum_Cpu_Time_Min,
+        MIN(Physical_Reads)               AS Min_Physical_Reads,
+        AVG(Physical_Reads)               AS Avg_Physical_Reads,
+        MAX(Physical_Reads)               AS Max_Physical_Reads,
+        SUM(Physical_Reads)               AS Sum_Physical_Reads,
+        MIN(Logical_Reads)                AS Min_Logical_Reads,
+        AVG(Logical_Reads)                AS Avg_Logical_Reads,
+        MAX(Logical_Reads)                AS Max_Logical_Reads,
+        SUM(Logical_Reads)                AS Sum_Logical_Reads,
+        MIN(Writes)                       AS Min_Writes,
+        AVG(Writes)                       AS Avg_Writes,
+        MAX(Writes)                       AS Max_Writes,
+        SUM(Writes)                       AS Sum_Writes,
+        MIN(Writes)                       AS Min_db_spills,
+        AVG(Writes)                       AS Avg_db_spills,
+        MAX(Writes)                       AS Max_db_spills,
+        SUM(Writes)                       AS Sum_db_spills,
+        MIN(Row_Count)                    AS Min_Row_Count,
+        AVG(Row_Count)                    AS Avg_Row_Count,
+        MAX(Row_Count)                    AS Max_Row_Count,
+        SUM(Row_Count)                    AS Sum_Row_Count
+FROM [dbo].[DBA_MonitorInstance_MoreThanFiveMinutes]
+WHERE
+--      sql_text LIKE '%FG_Repository%' OR sql_text LIKE '%FG_Repository%'
+      sql_text LIKE '%Accrual_Detail%'
+GROUP BY
+        sql_text,
+        database_name,
+        DATEPART(MM, TimeStamp),
+        DATEPART(DAY, TimeStamp),
+        username
+-- DATEPART(DAY, TimeStamp)
+-- DATEPART(DAY, TimeStamp)
+--ORDER BY Day desc, SQL_Text asc, Max_Duration_min desc
+--ORDER BY WEEK desc, SQL_Text asc
+-- ORDER BY Sum_Cpu_Time desc
+-- ORDER BY Day asc, Sum_Cpu_Time desc, SQL_Text asc
+-- ORDER BY Day desc, SQL_Text asc, Sum_Cpu_Time desc
+ORDER BY
+         Month desc,
+         Day desc,
+         Max_Duration_min desc
+--         Sum_Cpu_Time desc, 
+--         SQL_Text asc;

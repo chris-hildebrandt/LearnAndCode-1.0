@@ -1,0 +1,246 @@
+using System;
+
+// Component classes (simple, reusable parts)
+public class Engine
+{
+    public void Start()
+    {
+        Console.WriteLine("Engine started.");
+    }
+
+    public void Stop()
+    {
+        Console.WriteLine("Engine stopped.");
+    }
+}
+
+public class Wheels
+{
+    public void Rotate()
+    {
+        Console.WriteLine("Wheels are rotating.");
+    }
+}
+
+public class SteeringWheel
+{
+    public void TurnLeft()
+    {
+        Console.WriteLine("Steering wheel turned left.");
+    }
+
+    public void TurnRight()
+    {
+        Console.WriteLine("Steering wheel turned right.");
+    }
+}
+
+// Composite class (combines components)
+public class Car
+{
+    private Engine _engine;
+    private Wheels _wheels;
+    private SteeringWheel _steeringWheel;
+
+    public Car(Engine engine, Wheels wheels, SteeringWheel steeringWheel)
+    {
+        _engine = engine;
+        _wheels = wheels;
+        _steeringWheel = steeringWheel;
+    }
+
+    public void Drive()
+    {
+        _engine.Start();
+        _wheels.Rotate();
+        Console.WriteLine("Car is driving.");
+    }
+
+    public void Turn(string direction)
+    {
+        if (direction.ToLower() == "left")
+        {
+            _steeringWheel.TurnLeft();
+        }
+        else if (direction.ToLower() == "right")
+        {
+            _steeringWheel.TurnRight();
+        }
+        else
+        {
+            Console.WriteLine("Invalid direction.");
+        }
+    }
+
+    public void Stop()
+    {
+        _engine.Stop();
+        Console.WriteLine("Car stopped.");
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Create components
+        Engine engine = new Engine();
+        Wheels wheels = new Wheels();
+        SteeringWheel steeringWheel = new SteeringWheel();
+
+        // Create the composite object (Car) using composition
+        Car myCar = new Car(engine, wheels, steeringWheel);
+
+        // Use the Car object
+        myCar.Drive();
+        myCar.Turn("left");
+        myCar.Turn("right");
+        myCar.Stop();
+
+        //You can also easily swap out components.
+        Engine electricEngine = new Engine(); //Or any engine that implements the same interface.
+        Car electricCar = new Car(electricEngine, wheels, steeringWheel);
+        electricCar.Drive();
+
+    }
+}
+
+using System;
+
+// Example 1: Large, monolithic class (without composition)
+public class CarWithoutComposition1
+{
+    public void StartEngine()
+    {
+        Console.WriteLine("Engine started.");
+    }
+
+    public void RotateWheels()
+    {
+        Console.WriteLine("Wheels are rotating.");
+    }
+
+    public void TurnLeftSteeringWheel()
+    {
+        Console.WriteLine("Steering wheel turned left.");
+    }
+
+    public void TurnRightSteeringWheel()
+    {
+        Console.WriteLine("Steering wheel turned right.");
+    }
+
+    public void Drive()
+    {
+        StartEngine();
+        RotateWheels();
+        Console.WriteLine("Car is driving.");
+    }
+
+    public void Turn(string direction)
+    {
+        if (direction.ToLower() == "left")
+        {
+            TurnLeftSteeringWheel();
+        }
+        else if (direction.ToLower() == "right")
+        {
+            TurnRightSteeringWheel();
+        }
+        else
+        {
+            Console.WriteLine("Invalid direction.");
+        }
+    }
+
+    public void Stop()
+    {
+        Console.WriteLine("Car stopped.");
+    }
+}
+
+// Example 2: Inheritance-heavy approach (less composition, more coupling)
+public class Engine2
+{
+    public void Start()
+    {
+        Console.WriteLine("Engine started.");
+    }
+
+    public void Stop()
+    {
+        Console.WriteLine("Engine stopped.");
+    }
+}
+
+public class Wheels2
+{
+    public void Rotate()
+    {
+        Console.WriteLine("Wheels are rotating.");
+    }
+}
+
+public class SteeringWheel2
+{
+    public void TurnLeft()
+    {
+        Console.WriteLine("Steering wheel turned left.");
+    }
+
+    public void TurnRight()
+    {
+        Console.WriteLine("Steering wheel turned right.");
+    }
+}
+
+public class CarWithoutComposition2 : Engine2, Wheels2, SteeringWheel2 // Multiple Inheritance simulation. C# does not support direct multiple inheritance of classes.
+{
+    public void Drive()
+    {
+        Start(); // Inherited from Engine2
+        Rotate(); // Inherited from Wheels2
+        Console.WriteLine("Car is driving.");
+    }
+
+    public void Turn(string direction)
+    {
+        if (direction.ToLower() == "left")
+        {
+            TurnLeft(); // Inherited from SteeringWheel2
+        }
+        else if (direction.ToLower() == "right")
+        {
+            TurnRight(); // Inherited from SteeringWheel2
+        }
+        else
+        {
+            Console.WriteLine("Invalid direction.");
+        }
+    }
+
+    public void StopCar()
+    {
+        Stop(); // Inherited from Engine2.
+        Console.WriteLine("Car stopped.");
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        // Example 1 usage
+        CarWithoutComposition1 car1 = new CarWithoutComposition1();
+        car1.Drive();
+        car1.Turn("left");
+        car1.Stop();
+
+        //Example 2 usage.
+        CarWithoutComposition2 car2 = new CarWithoutComposition2();
+        car2.Drive();
+        car2.Turn("right");
+        car2.StopCar();
+
+    }
+}

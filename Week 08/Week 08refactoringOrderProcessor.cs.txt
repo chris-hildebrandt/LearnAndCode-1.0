@@ -1,0 +1,103 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace OrderProcessor
+{
+    public class InvoiceProcessor
+    {
+        public InvoiceProcessor()
+        {
+        }
+
+        public string GenerateInvoice(int orderId)
+        {
+            var invoice = new StringBuilder();
+            invoice.AppendLine($"Invoice for Order #{orderId}");
+            invoice.AppendLine($"Customer: {customerName}");
+            invoice.AppendLine("Items:");
+            foreach (var item in items)
+            {
+                invoice.AppendLine($"{item.Name} - {item.Quantity} x ${item.Price:F2} = ${item.Price * item.Quantity:F2}");
+            }
+            invoice.AppendLine($"Discount: ${discount:F2}");
+            invoice.AppendLine($"Total: ${CalculateTotal():F2}");
+            return invoice.ToString();
+        }
+    }
+
+    public class OrderProcessor
+    {
+        private int orderId;
+        private List<Item> items = new List<Item>();
+        private Dictionary<string, int> inventory = new Dictionary<string, int>();
+        private double discount = 0;
+        private string customerName;
+
+        private class Item
+        {
+            public string Name { get; set; }
+            public double Price { get; set; }
+            public int Quantity { get; set; }
+        }
+
+        public OrderProcessor(int orderId, string customerName)
+        {
+            this.orderId = orderId;
+            this.customerName = customerName;
+            this.inventory["apple"] = 100;
+            this.inventory["banana"] = 50;
+        }
+
+        public void AddItem(string name, double price, int quantity)
+        {
+            if (inventory.ContainsKey(name) && inventory[name] >= quantity)
+            {
+                items.Add(new Item { Name = name, Price = price, Quantity = quantity });
+                inventory[name] -= quantity;
+            }
+            else
+            {
+                Console.WriteLine($"Not enough {name} in stock");
+            }
+        }
+
+        public void SetDiscount(double discount)
+        {
+            this.discount = discount;
+        }
+
+        public double CalculateTotal()
+        {
+            double total = 0;
+            foreach (var item in items)
+            {
+                total += item.Price * item.Quantity;
+            }
+            return total - discount;
+        }
+
+
+
+        public string GetInventoryStatus()
+        {
+            var status = new StringBuilder("Inventory Status:");
+            foreach (var kvp in inventory)
+            {
+                status.AppendLine($"{kvp.Key}: {kvp.Value} remaining");
+            }
+            return status.ToString();
+        }
+
+        public static void Main(string[] args)
+        {
+            OrderProcessor order = new OrderProcessor(1, "John Doe");
+            order.AddItem("apple", 1.0, 5);
+            order.AddItem("banana", 0.5, 3);
+            order.SetDiscount(2.0);
+            Console.WriteLine(order.GenerateInvoice());
+            Console.WriteLine(order.GetInventoryStatus());
+        }
+    }
+}

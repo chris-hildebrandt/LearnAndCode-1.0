@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+public class inventory
+{
+    private Dictionary<string, int> items = new Dictionary<string, int>();
+
+    public void AddItem(string name, int quantity)
+    {
+        if (items.ContainsKey(name))
+        {
+            items[name] += quantity;
+        }
+        else
+        {
+            items[name] = quantity;
+        }
+    }
+
+    public bool RemoveItem(string item, int quantity)
+    {
+        if (items.ContainsKey(item) && items[item] >= quantity)
+        {
+            items[item] -= quantity;
+            return true;
+        }
+        return false;
+    }
+
+    public int GetQuantity(string item)
+    {
+        return items.ContainsKey(item) ? items[item] : 0;
+    }
+
+    public void SetQuantity(string item, int quantity)
+    {
+        items[item] = quantity;
+    }
+
+    public string GetInventoryStatus()
+    {
+        var status = new StringBuilder("Inventory Status:");
+        foreach (var item in inventory)
+        {
+            status.AppendLine($"{item.Key}: {item.Value} remaining");
+        }
+        return status.ToString();
+    }
+}

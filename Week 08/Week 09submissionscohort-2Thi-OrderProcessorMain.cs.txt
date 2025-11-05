@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+public static void Main(string[] args)
+{
+    Main(string[] args)
+    {
+        Order order = new Order("John Doe");
+        Inventory inventory = new Inventory();
+        inventory.AddItem("Apple", 100);
+        inventory.AddItem("Banana", 50);
+
+        OrderProcessor orderProcessor = new OrderProcessor(order, inventory);
+        orderProcessor.SetDiscount(2.0);
+
+        Console.WriteLine(orderProcessor.GenerateInvoice());
+        Console.WriteLine(inventory.GetInventoryStatus());
+    }
+}

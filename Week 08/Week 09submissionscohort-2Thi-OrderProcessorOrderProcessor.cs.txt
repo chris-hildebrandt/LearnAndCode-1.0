@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+public class OrderProcessor
+{
+    private double discount = 0;
+    private Order order;
+    private Inventory inventory;
+
+    public OrderProcessor(Order order, Inventory inventory)
+    {
+        this.order = order;
+        this.inventory = inventory;
+    }
+
+    public void SetDiscount(double discount)
+    {
+        this.discount = discount;
+    }
+
+    public double CalculateTotal()
+    {
+        double total = 0;
+        foreach (var item in order.items)
+        {
+            total += item.Price * item.Quantity;
+        }
+        return total - discount;
+    }
+
+    public string GenerateInvoice()
+    {
+        var invoice = new StringBuilder();
+        invoice.AppendLine($"Invoice for Order #{orderId}");
+        invoice.AppendLine($"Customer: {customerName}");
+        invoice.AppendLine("Items:");
+        foreach (var item in order.items)
+        {
+            invoice.AppendLine($"{item.Name} - {item.Quantity} x ${item.Price:F2} = ${item.Price * item.Quantity:F2}");
+            inventory.RemoveItem(item.Name, item.Quantity);
+        }
+        invoice.AppendLine($"Discount: ${discount:F2}");
+        invoice.AppendLine($"Total: ${CalculateTotal():F2}");
+        return invoice.ToString();
+    }
+}

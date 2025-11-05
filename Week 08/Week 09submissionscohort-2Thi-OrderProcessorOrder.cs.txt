@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+public class Order
+{
+    private int orderId;
+    private List<Item> items = new List<Item>();
+    private string customerName;
+
+    public Order(string customerName)
+    {
+        this.orderId = orderId;
+        this.customerName = customerName;
+    }
+
+    public void AddItem(string name, double price, int quantity)
+    {
+        items.Add(new Item { Name = name, Price = price, Quantity = quantity });
+    }
+    public void RemoveItem(string name, int quantity)
+    {
+        var item = items.FirstOrDefault(i => i.Name == name);
+        if (item != null && item.Quantity >= quantity)
+        {
+            item.Quantity -= quantity;
+            if (item.Quantity == 0)
+            {
+                items.Remove(item);
+            }
+        }
+    }
+}
