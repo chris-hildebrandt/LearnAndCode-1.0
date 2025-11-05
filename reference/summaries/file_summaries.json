@@ -1,0 +1,1316 @@
+[
+  {
+    "id": "LearnAndCode1.0.code-workspace",
+    "week": null,
+    "subcategory": null,
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "LearnAndCode1.0.code-workspace (8 lines)",
+    "long_summary": "{",
+    "stats": {
+      "line_count": 8
+    }
+  },
+  {
+    "id": "README.md",
+    "week": null,
+    "subcategory": null,
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Learn & Code Curriculum for In Time Tec: Course Structure, Learning Objectives, Program Components",
+    "long_summary": "Key points include: Foundational Engineering Practices; Week 1: Introduction to Quality Manifesto & Clean Code Principles - Learn about In Time Tec's Quality Manifesto and foundational Clean Code concepts; Week 2: Meaningful Names - Understand the importance of clear, descriptive naming conventions; Week 3: Foundational AI Development/Prompt Engineering - Master AI tools and prompt engineering for enhanced development; Week 4: Functions - Learn to write clean, efficient, and maintainable functions",
+    "stats": {
+      "primary_title": "Learn & Code Curriculum for In Time Tec",
+      "sections": [
+        "Course Structure",
+        "Learning Objectives",
+        "Program Components",
+        "Continuous Improvement",
+        "Additional Resources"
+      ],
+      "bullet_count": 51,
+      "line_count": 78
+    }
+  },
+  {
+    "id": "Week 01/overview-wk1.md",
+    "week": "Week 01",
+    "subcategory": "overview-wk1.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 1: Introduction to In Time Tec's Quality Manifesto & Clean Code Principles by Bob Martin: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Weekly Assignment; Submission Guidelines; Discussion Topics",
+    "stats": {
+      "primary_title": "Week 1: Introduction to In Time Tec's Quality Manifesto & Clean Code Principles by Bob Martin",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 14,
+      "line_count": 41
+    }
+  },
+  {
+    "id": "Week 02/examples.md",
+    "week": "Week 02",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 3: Meaningful Names - Refactoring Example: Table of Contents, Before Refactoring, After Refactoring",
+    "long_summary": "Key points include: Before Refactoring; After Refactoring; Refactoring Explanation",
+    "stats": {
+      "primary_title": "Week 3: Meaningful Names - Refactoring Example",
+      "sections": [
+        "Table of Contents",
+        "Before Refactoring",
+        "After Refactoring",
+        "Refactoring Explanation"
+      ],
+      "bullet_count": 3,
+      "line_count": 71
+    }
+  },
+  {
+    "id": "Week 02/overview-wk2.md",
+    "week": "Week 02",
+    "subcategory": "overview-wk2.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 2: Meaningful Names: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 2: Meaningful Names",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 24,
+      "line_count": 59
+    }
+  },
+  {
+    "id": "Week 02/readme",
+    "week": "Week 02",
+    "subcategory": "readme",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "readme (7 lines)",
+    "long_summary": "I have just started to create the DB that will support TFBS (Thanksgiving Foodbox System). At this point I have not created any code. I have reviewed the DB for naming issued based on the recommendati",
+    "stats": {
+      "line_count": 7
+    }
+  },
+  {
+    "id": "Week 02/refactor-activity.js",
+    "week": "Week 02",
+    "subcategory": "refactor-activity.js",
+    "content_kind": "code",
+    "content_subtype": "javascript",
+    "short_summary": "refactor-activity.js: 56 lines; constructs b, g, h, j",
+    "long_summary": "let a = [];  // Function to add a user object to the array function b(n, ag, ad) {     let c = { d: n, e: ag, f: ad };     a.push(c); }  // Function to find a user object by name function g(n) {     for (let i = 0; i < a.length; i++) {         if (a[i].d === n) {             return a[i];         }  ",
+    "stats": {
+      "line_count": 56,
+      "constructs": [
+        "b",
+        "g",
+        "h",
+        "j"
+      ]
+    }
+  },
+  {
+    "id": "Week 03/overview-wk3.md",
+    "week": "Week 03",
+    "subcategory": "overview-wk3.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 3: Foundational AI Development/Prompt Engineering for Developers: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 3: Foundational AI Development/Prompt Engineering for Developers",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 39,
+      "line_count": 78
+    }
+  },
+  {
+    "id": "Week 03/readme",
+    "week": "Week 03",
+    "subcategory": "readme",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "readme (1 lines)",
+    "long_summary": "For my project that I am using for this class I am still in the process of developing the DB. The app I am developing will not contain any prompts at this point. I need to think more about the the UI ",
+    "stats": {
+      "line_count": 1
+    }
+  },
+  {
+    "id": "Week 04/examples.md",
+    "week": "Week 04",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 4: Functions - Refactoring Example: Table of Contents, Before Refactoring, After Refactoring",
+    "long_summary": "Key points include: Before Refactoring; After Refactoring; Refactoring Explanation",
+    "stats": {
+      "primary_title": "Week 4: Functions - Refactoring Example",
+      "sections": [
+        "Table of Contents",
+        "Before Refactoring",
+        "After Refactoring",
+        "Refactoring Explanation"
+      ],
+      "bullet_count": 3,
+      "line_count": 69
+    }
+  },
+  {
+    "id": "Week 04/overview-wk4.md",
+    "week": "Week 04",
+    "subcategory": "overview-wk4.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 4: Functions: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 4: Functions",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 23,
+      "line_count": 54
+    }
+  },
+  {
+    "id": "Week 05/activity/readme.md",
+    "week": "Week 05",
+    "subcategory": "activity",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "readme.md: Acitivty set-up, During Cohort Meeting",
+    "long_summary": "Key points include: Before this weeks Learn And Code Cohort meeting, create a branch [week05-activity-mm-dd] for everyone to use; Create a new file [cohort-{x}.md] and ask a simple question within the file; Commit the file and Push the branch, ask everyone to checkout the branch, answer the question, commit and push their changes.; Help resolve conflicts as needed.",
+    "stats": {
+      "primary_title": null,
+      "sections": [
+        "Acitivty set-up",
+        "During Cohort Meeting"
+      ],
+      "bullet_count": 4,
+      "line_count": 10
+    }
+  },
+  {
+    "id": "Week 05/examples.md",
+    "week": "Week 05",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 5: GIT - Examples: Table of Contents, Example 1: Interactive Rebase, Example 2: Cherry-picking Commits",
+    "long_summary": "Key points include: Example 1: Interactive Rebase; Example 2: Cherry-picking Commits; Example 3: Squashing Commits; Example 4: Reverting a Commit",
+    "stats": {
+      "primary_title": "Week 5: GIT - Examples",
+      "sections": [
+        "Table of Contents",
+        "Example 1: Interactive Rebase",
+        "Example 2: Cherry-picking Commits",
+        "Example 3: Squashing Commits",
+        "Example 4: Reverting a Commit"
+      ],
+      "bullet_count": 4,
+      "line_count": 60
+    }
+  },
+  {
+    "id": "Week 05/overview-wk5.md",
+    "week": "Week 05",
+    "subcategory": "overview-wk5.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 5: GIT - Introduction to Version Control: Table of Contents, Learning Objectives, Resources",
+    "long_summary": "Key points include: Learning Objectives; Resources; Weekly Assignment; Submission Guidelines; Discussion Topics",
+    "stats": {
+      "primary_title": "Week 5: GIT - Introduction to Version Control",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 19,
+      "line_count": 47
+    }
+  },
+  {
+    "id": "Week 05/readme",
+    "week": "Week 05",
+    "subcategory": "readme",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "readme (84 lines)",
+    "long_summary": "## Week 5: GIT - Version Control Tasks",
+    "stats": {
+      "line_count": 84
+    }
+  },
+  {
+    "id": "Week 06/overview-wk6.md",
+    "week": "Week 06",
+    "subcategory": "overview-wk6.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 6: GIT - Advanced Techniques and Best Practices: Table of Contents, Learning Objectives, Resources",
+    "long_summary": "Key points include: Learning Objectives; Resources; Weekly Assignment; Submission Guidelines; Discussion Topics",
+    "stats": {
+      "primary_title": "Week 6: GIT - Advanced Techniques and Best Practices",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 18,
+      "line_count": 46
+    }
+  },
+  {
+    "id": "Week 07/examples.md",
+    "week": "Week 07",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 7: Code Review - Example: Table of Contents, Before Code Review, Feedback from Code Review",
+    "long_summary": "Key points include: Before Code Review; Feedback from Code Review; After Implementing Feedback; Code Review Impact",
+    "stats": {
+      "primary_title": "Week 7: Code Review - Example",
+      "sections": [
+        "Table of Contents",
+        "Before Code Review",
+        "Feedback from Code Review",
+        "After Implementing Feedback",
+        "Code Review Impact"
+      ],
+      "bullet_count": 4,
+      "line_count": 95
+    }
+  },
+  {
+    "id": "Week 07/overview-wk7.md",
+    "week": "Week 07",
+    "subcategory": "overview-wk7.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 7: Code Review & Technical Excellence: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 7: Code Review & Technical Excellence",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 21,
+      "line_count": 53
+    }
+  },
+  {
+    "id": "Week 07/readme",
+    "week": "Week 07",
+    "subcategory": "readme",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "readme (90 lines)",
+    "long_summary": "I like the idea for personal checklist of items that are your typical items found during code reviews.",
+    "stats": {
+      "line_count": 90
+    }
+  },
+  {
+    "id": "Week 08/Composition Example",
+    "week": "Week 08",
+    "subcategory": "Composition Example",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "Composition Example (246 lines)",
+    "long_summary": "using System;",
+    "stats": {
+      "line_count": 246
+    }
+  },
+  {
+    "id": "Week 08/Week 08refactoringOrderProcessor.cs.txt",
+    "week": "Week 08",
+    "subcategory": "Week 08refactoringOrderProcessor.cs.txt",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "Week 08refactoringOrderProcessor.cs.txt (103 lines)",
+    "long_summary": "using System;",
+    "stats": {
+      "line_count": 103
+    }
+  },
+  {
+    "id": "Week 08/Week 09submissionscohort-2Thi-OrderProcessorInventory.cs.txt",
+    "week": "Week 08",
+    "subcategory": "Week 09submissionscohort-2Thi-OrderProcessorInventory.cs.txt",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "Week 09submissionscohort-2Thi-OrderProcessorInventory.cs.txt (51 lines)",
+    "long_summary": "using System;",
+    "stats": {
+      "line_count": 51
+    }
+  },
+  {
+    "id": "Week 08/Week 09submissionscohort-2Thi-OrderProcessorItem.cs.txt",
+    "week": "Week 08",
+    "subcategory": "Week 09submissionscohort-2Thi-OrderProcessorItem.cs.txt",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "Week 09submissionscohort-2Thi-OrderProcessorItem.cs.txt (6 lines)",
+    "long_summary": "public class Item",
+    "stats": {
+      "line_count": 6
+    }
+  },
+  {
+    "id": "Week 08/Week 09submissionscohort-2Thi-OrderProcessorMain.cs.txt",
+    "week": "Week 08",
+    "subcategory": "Week 09submissionscohort-2Thi-OrderProcessorMain.cs.txt",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "Week 09submissionscohort-2Thi-OrderProcessorMain.cs.txt (21 lines)",
+    "long_summary": "using System;",
+    "stats": {
+      "line_count": 21
+    }
+  },
+  {
+    "id": "Week 08/Week 09submissionscohort-2Thi-OrderProcessorOrder.cs.txt",
+    "week": "Week 08",
+    "subcategory": "Week 09submissionscohort-2Thi-OrderProcessorOrder.cs.txt",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "Week 09submissionscohort-2Thi-OrderProcessorOrder.cs.txt (34 lines)",
+    "long_summary": "using System;",
+    "stats": {
+      "line_count": 34
+    }
+  },
+  {
+    "id": "Week 08/Week 09submissionscohort-2Thi-OrderProcessorOrderProcessor.cs.txt",
+    "week": "Week 08",
+    "subcategory": "Week 09submissionscohort-2Thi-OrderProcessorOrderProcessor.cs.txt",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "Week 09submissionscohort-2Thi-OrderProcessorOrderProcessor.cs.txt (48 lines)",
+    "long_summary": "using System;",
+    "stats": {
+      "line_count": 48
+    }
+  },
+  {
+    "id": "Week 08/examples.md",
+    "week": "Week 08",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 8: Classes - Examples: Table of Contents, Example 1: Improving Class Organization, Example 2: Dependency Management",
+    "long_summary": "Key points include: Example 1: Improving Class Organization; Example 2: Dependency Management; Explanation:; Explanation:",
+    "stats": {
+      "primary_title": "Week 8: Classes - Examples",
+      "sections": [
+        "Table of Contents",
+        "Example 1: Improving Class Organization",
+        "Example 2: Dependency Management"
+      ],
+      "bullet_count": 4,
+      "line_count": 120
+    }
+  },
+  {
+    "id": "Week 08/overview-wk8.md",
+    "week": "Week 08",
+    "subcategory": "overview-wk8.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 8: Classes: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 8: Classes",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 18,
+      "line_count": 50
+    }
+  },
+  {
+    "id": "Week 08/readme",
+    "week": "Week 08",
+    "subcategory": "readme",
+    "content_kind": "text",
+    "content_subtype": "plain",
+    "short_summary": "readme (1 lines)",
+    "long_summary": "I have not made any changes to my project. My project is still in the design phase and it is a personal project for the Thanksgiving Food Box. I will keep in mind the learning from this class, especia",
+    "stats": {
+      "line_count": 1
+    }
+  },
+  {
+    "id": "Week 09/examples.md",
+    "week": "Week 09",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 9: Systems - Examples: Table of Contents, Example 1: Separation of Concerns in System Design",
+    "long_summary": "Key points include: Example 1: Separation of Concerns in System Design; Explanation:",
+    "stats": {
+      "primary_title": "Week 9: Systems - Examples",
+      "sections": [
+        "Table of Contents",
+        "Example 1: Separation of Concerns in System Design"
+      ],
+      "bullet_count": 2,
+      "line_count": 34
+    }
+  },
+  {
+    "id": "Week 09/inventory.py",
+    "week": "Week 09",
+    "subcategory": "inventory.py",
+    "content_kind": "code",
+    "content_subtype": "python",
+    "short_summary": "inventory.py: 14 lines; constructs __init__, is_available, reduce_stock, get_status, Inventory",
+    "long_summary": "# inventory.py manages item availability and updates class Inventory:     def __init__(self):         self.stock = {\"apple\": 100, \"banana\": 50}      def is_available(self, item: str, quantity: int) -> bool:         return self.stock.get(item, 0) >= quantity      def reduce_stock(self, item: str, qua",
+    "stats": {
+      "line_count": 14,
+      "constructs": [
+        "__init__",
+        "is_available",
+        "reduce_stock",
+        "get_status",
+        "Inventory"
+      ]
+    }
+  },
+  {
+    "id": "Week 09/invoice.py",
+    "week": "Week 09",
+    "subcategory": "invoice.py",
+    "content_kind": "code",
+    "content_subtype": "python",
+    "short_summary": "invoice.py: 12 lines; constructs generate, InvoiceGenerator",
+    "long_summary": "# invoice.py responsible for creating the invoice class InvoiceGenerator:     @staticmethod     def generate(order: Order) -> str:         invoice = f\"Invoice for Order #{order.order_id}\\n\"         invoice += f\"Customer: {order.customer_name}\\nItems:\\n\"         for item in order.items:             i",
+    "stats": {
+      "line_count": 12,
+      "constructs": [
+        "generate",
+        "InvoiceGenerator"
+      ]
+    }
+  },
+  {
+    "id": "Week 09/main.py",
+    "week": "Week 09",
+    "subcategory": "main.py",
+    "content_kind": "code",
+    "content_subtype": "python",
+    "short_summary": "main.py: 20 lines",
+    "long_summary": "# main.py coordinates the other classes from inventory import Inventory from order import Order from invoice import InvoiceGenerator  if __name__ == \"__main__\":     inventory = Inventory()     order = Order(1, \"John Doe\")      for name, price, qty in [(\"apple\", 1.0, 5), (\"banana\", 0.5, 3)]:         ",
+    "stats": {
+      "line_count": 20,
+      "constructs": []
+    }
+  },
+  {
+    "id": "Week 09/order.py",
+    "week": "Week 09",
+    "subcategory": "order.py",
+    "content_kind": "code",
+    "content_subtype": "python",
+    "short_summary": "order.py: 17 lines; constructs __init__, add_item, set_discount, calculate_total, Order",
+    "long_summary": "# order.py handles order items and discounts class Order:     def __init__(self, order_id: int, customer_name: str):         self.order_id = order_id         self.customer_name = customer_name         self.items = []         self.discount = 0.0      def add_item(self, name: str, price: float, quanti",
+    "stats": {
+      "line_count": 17,
+      "constructs": [
+        "__init__",
+        "add_item",
+        "set_discount",
+        "calculate_total",
+        "Order"
+      ]
+    }
+  },
+  {
+    "id": "Week 09/overview-wk9.md",
+    "week": "Week 09",
+    "subcategory": "overview-wk9.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 9: Systems: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 9: Systems",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 17,
+      "line_count": 46
+    }
+  },
+  {
+    "id": "Week 10/examples.md",
+    "week": "Week 10",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 10: Organizing Objects and Data Structures - Example: Table of Contents, Before Refactoring, After Refactoring",
+    "long_summary": "Key points include: Before Refactoring; After Refactoring; Changes Made; Impact of Changes; Separated data storage and business logic by introducing repository and service classes.",
+    "stats": {
+      "primary_title": "Week 10: Organizing Objects and Data Structures - Example",
+      "sections": [
+        "Table of Contents",
+        "Before Refactoring",
+        "After Refactoring",
+        "Changes Made",
+        "Impact of Changes"
+      ],
+      "bullet_count": 10,
+      "line_count": 139
+    }
+  },
+  {
+    "id": "Week 10/overview-wk10.md",
+    "week": "Week 10",
+    "subcategory": "overview-wk10.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 10: Organizing Objects and Data Structures: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 10: Organizing Objects and Data Structures",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 19,
+      "line_count": 51
+    }
+  },
+  {
+    "id": "Week 11/overview-wk11.md",
+    "week": "Week 11",
+    "subcategory": "overview-wk11.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 11: Organizing Objects and Data Structures part 2: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 11: Organizing Objects and Data Structures part 2",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 19,
+      "line_count": 51
+    }
+  },
+  {
+    "id": "Week 12/examples.md",
+    "week": "Week 12",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 12: Error Handling - Example: Table of Contents, Before Error Handling Improvements, Changes Made",
+    "long_summary": "Key points include: Before Error Handling Improvements; Changes Made; After Error Handling Improvements; Impact of Changes; Added proper exception handling using try-catch blocks.",
+    "stats": {
+      "primary_title": "Week 12: Error Handling - Example",
+      "sections": [
+        "Table of Contents",
+        "Before Error Handling Improvements",
+        "Changes Made",
+        "After Error Handling Improvements",
+        "Impact of Changes"
+      ],
+      "bullet_count": 10,
+      "line_count": 80
+    }
+  },
+  {
+    "id": "Week 12/overview-wk12.md",
+    "week": "Week 12",
+    "subcategory": "overview-wk12.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 12: Introduction to Error Handling: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 12: Introduction to Error Handling",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 23,
+      "line_count": 52
+    }
+  },
+  {
+    "id": "Week 13/overview-wk13.md",
+    "week": "Week 13",
+    "subcategory": "overview-wk13.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 13: Advanced Error Handling and Introduction to Error Reporting/Monitoring Services: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 13: Advanced Error Handling and Introduction to Error Reporting/Monitoring Services",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 23,
+      "line_count": 55
+    }
+  },
+  {
+    "id": "Week 14/examples.md",
+    "week": "Week 14",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 14: Boundaries & Integrations - Example (3rd Party Software): Table of Contents, Before Improving Boundaries and Integrations, After Improving Boundaries and Integrations",
+    "long_summary": "Key points include: Before Improving Boundaries and Integrations; After Improving Boundaries and Integrations; Changes Made; Impact of Changes; Identified boundaries between the components responsible for fetching weather data and processing it.",
+    "stats": {
+      "primary_title": "Week 14: Boundaries & Integrations - Example (3rd Party Software)",
+      "sections": [
+        "Table of Contents",
+        "Before Improving Boundaries and Integrations",
+        "After Improving Boundaries and Integrations",
+        "Changes Made",
+        "Impact of Changes"
+      ],
+      "bullet_count": 11,
+      "line_count": 106
+    }
+  },
+  {
+    "id": "Week 14/overview-wk14.md",
+    "week": "Week 14",
+    "subcategory": "overview-wk14.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 14: Boundaries & Integrations: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 14: Boundaries & Integrations",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 19,
+      "line_count": 51
+    }
+  },
+  {
+    "id": "Week 15/examples/single-responsibility.cs",
+    "week": "Week 15",
+    "subcategory": "examples",
+    "content_kind": "code",
+    "content_subtype": "csharp",
+    "short_summary": "single-responsibility.cs: 130 lines; constructs Employee, violates, Program, Employee, EmployeeRepository",
+    "long_summary": "// Example of what not to do when it comes to single responsibility rule  using System;  public class Employee {     // This class violates the single responsibility rule     // It has two responsibilities: saving to database and generating report     // It should be split into three classes: Employ",
+    "stats": {
+      "line_count": 130,
+      "constructs": [
+        "Employee",
+        "violates",
+        "Program",
+        "Employee",
+        "EmployeeRepository",
+        "EmployeeReport",
+        "Program",
+        "Employee",
+        "EmployeeRepository",
+        "EmployeeReport",
+        "EmployeeService",
+        "Program"
+      ]
+    }
+  },
+  {
+    "id": "Week 15/overview-wk15.md",
+    "week": "Week 15",
+    "subcategory": "overview-wk15.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 15: Single Responsibility Principle: Table of Contents, Learning Objectives, Resources",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 15: Single Responsibility Principle",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 20,
+      "line_count": 53
+    }
+  },
+  {
+    "id": "Week 16/examples/open-closed.ts",
+    "week": "Week 16",
+    "subcategory": "examples",
+    "content_kind": "code",
+    "content_subtype": "typescript",
+    "short_summary": "open-closed.ts: 88 lines; constructs is, addBookToLibrary, is, addBookToLibraryRefactored, which",
+    "long_summary": "// Bad example of the open-closed principle  export type Book = {     title: string;     genre: string; }  export type Library = {     [key: string]: Book[]; }  // This function is not closed for modification // because we have to modify it every time we // add a new genre of book to our library fun",
+    "stats": {
+      "line_count": 88,
+      "constructs": [
+        "is",
+        "addBookToLibrary",
+        "is",
+        "addBookToLibraryRefactored",
+        "which",
+        "is",
+        "is",
+        "addBookToLibraryRefactoredOneLine",
+        "is",
+        "is"
+      ]
+    }
+  },
+  {
+    "id": "Week 16/overview-wk16.md",
+    "week": "Week 16",
+    "subcategory": "overview-wk16.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 16: Open/Closed Principle: Table of Contents, Learning Objectives, Resources",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 16: Open/Closed Principle",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 19,
+      "line_count": 48
+    }
+  },
+  {
+    "id": "Week 17/examples/liskov-substitution.cs",
+    "week": "Week 17",
+    "subcategory": "examples",
+    "content_kind": "code",
+    "content_subtype": "csharp",
+    "short_summary": "liskov-substitution.cs: 69 lines; constructs IShape, Shape, has, Circle, Square",
+    "long_summary": " interface IShape {     void Draw();     void Rotate(); }  public abstract class Shape : IShape  // The Shape class has a method called Draw that just prints the type of shape. {     public virtual void Draw()     {         Console.WriteLine(\"Drawing a Shape\");     }      public virtual void Rotate(",
+    "stats": {
+      "line_count": 69,
+      "constructs": [
+        "IShape",
+        "Shape",
+        "has",
+        "Circle",
+        "Square",
+        "Program"
+      ]
+    }
+  },
+  {
+    "id": "Week 17/overview-wk17.md",
+    "week": "Week 17",
+    "subcategory": "overview-wk17.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 17: Liskov Substitution Principle: Table of Contents, Learning Objectives, Resources",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 17: Liskov Substitution Principle",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 19,
+      "line_count": 49
+    }
+  },
+  {
+    "id": "Week 18/examples/interface-segregation.cs",
+    "week": "Week 18",
+    "subcategory": "examples",
+    "content_kind": "code",
+    "content_subtype": "csharp",
+    "short_summary": "interface-segregation.cs: 125 lines; constructs segregation, IWorker, segregation, Robot, Human",
+    "long_summary": "// Bad example of the interface segregation principle  public interface IWorker {     void Work8to5();      void Work9to5(); }  // The robot only works, it can't eat or sleep so this is violating the interface segregation principle public class Robot : IWorker {     // We shouldn't need to have this",
+    "stats": {
+      "line_count": 125,
+      "constructs": [
+        "segregation",
+        "IWorker",
+        "segregation",
+        "Robot",
+        "Human",
+        "IWorker",
+        "IEater",
+        "ISleeper",
+        "Robot",
+        "HumanService",
+        "HumanController",
+        "Program"
+      ]
+    }
+  },
+  {
+    "id": "Week 18/overview-wk18.md",
+    "week": "Week 18",
+    "subcategory": "overview-wk18.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 18: Interface Segregation Principle: Table of Contents, Learning Objectives, Resources",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 18: Interface Segregation Principle",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 19,
+      "line_count": 49
+    }
+  },
+  {
+    "id": "Week 19/examples/dependency-inversion.ts",
+    "week": "Week 19",
+    "subcategory": "examples",
+    "content_kind": "code",
+    "content_subtype": "typescript",
+    "short_summary": "dependency-inversion.ts: 75 lines; constructs ConsoleLogger, MessageLogger, ConsoleLogger, ApiLogger, KafkaLogger",
+    "long_summary": "// Bad Example of Dependency Inversion  /* In this bad example, MessageLogger directly depends on ConsoleLogger.    This tightly couples MessageLogger to ConsoleLogger, making it hard to change the logging mechanism without modifying MessageLogger. */  class ConsoleLogger {     log(message: string):",
+    "stats": {
+      "line_count": 75,
+      "constructs": [
+        "ConsoleLogger",
+        "MessageLogger",
+        "ConsoleLogger",
+        "ApiLogger",
+        "KafkaLogger",
+        "ImprovedMessageLogger"
+      ]
+    }
+  },
+  {
+    "id": "Week 19/overview-wk19.md",
+    "week": "Week 19",
+    "subcategory": "overview-wk19.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 19: Dependency Inversion Principle: Table of Contents, Learning Objectives, Resources",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 19: Dependency Inversion Principle",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 19,
+      "line_count": 48
+    }
+  },
+  {
+    "id": "Week 20/overview-20.md",
+    "week": "Week 20",
+    "subcategory": "overview-20.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 20: API Design & Integration: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 20: API Design & Integration",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 35,
+      "line_count": 66
+    }
+  },
+  {
+    "id": "Week 21/examples.md",
+    "week": "Week 21",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 21: Unit Tests & Test-Driven Development - Example: Table of Contents, Before Unit Tests & TDD, Writing Unit Tests",
+    "long_summary": "Key points include: Before Unit Tests & TDD; Writing Unit Tests; Test-Driven Development; After Unit Tests & TDD; Impact of Unit Tests & TDD",
+    "stats": {
+      "primary_title": "Week 21: Unit Tests & Test-Driven Development - Example",
+      "sections": [
+        "Table of Contents",
+        "Before Unit Tests & TDD",
+        "Writing Unit Tests",
+        "Test-Driven Development",
+        "After Unit Tests & TDD",
+        "Impact of Unit Tests & TDD"
+      ],
+      "bullet_count": 10,
+      "line_count": 154
+    }
+  },
+  {
+    "id": "Week 21/overview-wk21.md",
+    "week": "Week 21",
+    "subcategory": "overview-wk21.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 21: Unit Tests & Test-Driven Development: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 21: Unit Tests & Test-Driven Development",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 20,
+      "line_count": 52
+    }
+  },
+  {
+    "id": "Week 22/examples.md",
+    "week": "Week 22",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 22: Design Patterns - Examples: Table of Contents, Singleton Pattern, Before",
+    "long_summary": "Key points include: Singleton Pattern; Strategy Pattern; Observer Pattern; Factory Method Pattern; Decorator Pattern",
+    "stats": {
+      "primary_title": "Week 22: Design Patterns - Examples",
+      "sections": [
+        "Table of Contents",
+        "Singleton Pattern",
+        "Before",
+        "After",
+        "Strategy Pattern",
+        "Before",
+        "After",
+        "Observer Pattern",
+        "Before",
+        "After",
+        "Factory Method Pattern",
+        "Before",
+        "After",
+        "Decorator Pattern",
+        "Before",
+        "After"
+      ],
+      "bullet_count": 5,
+      "line_count": 399
+    }
+  },
+  {
+    "id": "Week 22/overview-wk22.md",
+    "week": "Week 22",
+    "subcategory": "overview-wk22.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 22: Design Patterns: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 22: Design Patterns",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 21,
+      "line_count": 53
+    }
+  },
+  {
+    "id": "Week 23/overview-wk23.md",
+    "week": "Week 23",
+    "subcategory": "overview-wk23.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 23: Design Patterns part 2: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 23: Design Patterns part 2",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 21,
+      "line_count": 53
+    }
+  },
+  {
+    "id": "Week 24/overview-wk24.md",
+    "week": "Week 24",
+    "subcategory": "overview-wk24.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 24: Event-Driven Architecture: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 24: Event-Driven Architecture",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 43,
+      "line_count": 75
+    }
+  },
+  {
+    "id": "Week 25/examples.md",
+    "week": "Week 25",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 25: Concurrency & Performance - Examples: Table of Contents, Example 1: Using Parallelism for Performance Improvement, Example 2: Implementing a Thread-Safe Data Structure",
+    "long_summary": "Key points include: Example 1: Using Parallelism for Performance Improvement; Example 2: Implementing a Thread-Safe Data Structure; Example 3: Caching for Performance Optimization; Explanation:; Explanation:",
+    "stats": {
+      "primary_title": "Week 25: Concurrency & Performance - Examples",
+      "sections": [
+        "Table of Contents",
+        "Example 1: Using Parallelism for Performance Improvement",
+        "Example 2: Implementing a Thread-Safe Data Structure",
+        "Example 3: Caching for Performance Optimization"
+      ],
+      "bullet_count": 6,
+      "line_count": 145
+    }
+  },
+  {
+    "id": "Week 25/overview-wk25.md",
+    "week": "Week 25",
+    "subcategory": "overview-wk25.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 25: Concurrency & Performance: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 25: Concurrency & Performance",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 23,
+      "line_count": 54
+    }
+  },
+  {
+    "id": "Week 26/examples.md",
+    "week": "Week 26",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 26: Code Smells & Heuristics - Examples: Table of Contents, Long Method, Code Smell",
+    "long_summary": "# Week 26: Code Smells & Heuristics - Examples",
+    "stats": {
+      "primary_title": "Week 26: Code Smells & Heuristics - Examples",
+      "sections": [
+        "Table of Contents",
+        "Long Method",
+        "Code Smell",
+        "Refactored Code",
+        "Large Class",
+        "Code Smell",
+        "Refactored Code",
+        "Duplicated Code",
+        "Code Smell",
+        "Refactored Code"
+      ],
+      "bullet_count": 0,
+      "line_count": 206
+    }
+  },
+  {
+    "id": "Week 26/overview-wk26.md",
+    "week": "Week 26",
+    "subcategory": "overview-wk26.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 26: Code Smells & Heuristics: Table of Contents, Learning Objectives, Reading Assignment",
+    "long_summary": "Key points include: Learning Objectives; Reading Assignment; Resources; Weekly Assignment; Submission Guidelines",
+    "stats": {
+      "primary_title": "Week 26: Code Smells & Heuristics",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Reading Assignment",
+        "Resources",
+        "Weekly Assignment"
+      ],
+      "bullet_count": 15,
+      "line_count": 36
+    }
+  },
+  {
+    "id": "Week 27/examples.md",
+    "week": "Week 27",
+    "subcategory": "examples.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 27: Documentation & Communication - Examples: Table of Contents, Great Documentation, Feature: File Content Reverser",
+    "long_summary": "Key points include: Supported file formats: TXT, CSV; Maximum file size: 10 MB; If the output file already exists, its content will be overwritten.; If the input file is not found or not supported, an exception will be thrown.; Be careful with file formats and sizes.",
+    "stats": {
+      "primary_title": "Week 27: Documentation & Communication - Examples",
+      "sections": [
+        "Table of Contents",
+        "Great Documentation",
+        "Feature: File Content Reverser",
+        "Requirements",
+        "Usage",
+        "Notes",
+        "Bad Documentation",
+        "Feature: File Content Reverser",
+        "How to Use",
+        "Notes"
+      ],
+      "bullet_count": 5,
+      "line_count": 56
+    }
+  },
+  {
+    "id": "Week 27/overview-wk27.md",
+    "week": "Week 27",
+    "subcategory": "overview-wk27.md",
+    "content_kind": "text",
+    "content_subtype": "markdown",
+    "short_summary": "Week 27: Documentation & Communication: Table of Contents, Learning Objectives, Resources",
+    "long_summary": "Key points include: Learning Objectives; Resources; Weekly Assignment; Submission Guidelines; Discussion Topics",
+    "stats": {
+      "primary_title": "Week 27: Documentation & Communication",
+      "sections": [
+        "Table of Contents",
+        "Learning Objectives",
+        "Resources",
+        "Weekly Assignment",
+        "Submission Guidelines",
+        "Discussion Topics"
+      ],
+      "bullet_count": 20,
+      "line_count": 48
+    }
+  }
+]
