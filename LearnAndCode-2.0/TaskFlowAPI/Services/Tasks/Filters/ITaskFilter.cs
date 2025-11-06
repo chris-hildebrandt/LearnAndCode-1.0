@@ -17,7 +17,7 @@ namespace TaskFlowAPI.Services.Tasks.Filters;
 /// <summary>
 /// This interface is the contract for any task filtering strategy.
 /// It declares a single method, `IsMatch`, that all concrete filter classes must implement.
-/// Week 10 scaffolding: students will implement strategy pattern instances for filtering tasks.
+/// Week 12 scaffolding: students will implement strategy pattern instances for filtering tasks.
 /// </summary>
 public interface ITaskFilter
 {

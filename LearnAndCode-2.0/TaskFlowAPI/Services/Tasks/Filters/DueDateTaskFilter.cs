@@ -11,7 +11,7 @@ namespace TaskFlowAPI.Services.Tasks.Filters;
 /// <summary>
 /// A specific implementation of ITaskFilter that checks if a task's due date
 /// falls within a given start and end date range.
-/// Week 10: Filter tasks by due date range.
+/// Week 12: Filter tasks by due date range.
 /// </summary>
 public class DueDateTaskFilter : ITaskFilter
 {
@@ -40,12 +40,12 @@ public class DueDateTaskFilter : ITaskFilter
     /// <returns>True if the task is a match, otherwise false.</returns>
     public bool IsMatch(TaskEntity task)
     {
-        // This is a placeholder for the Week 10 assignment.
+        // This is a placeholder for the Week 12 assignment.
         // The goal is to implement the logic that checks the task's DueDate against the _start and _end fields.
         // You'll need to handle cases where _start or _end might be null.
         // For example, if _start is null, it means you should match all tasks due before _end.
         // If both are null, it should probably match any task that has a due date.
-        // TODO Week 10: Implement date range filtering.
-        throw new NotImplementedException("Week 10: Implement DueDateTaskFilter.IsMatch");
+        // TODO Week 12: Implement date range filtering.
+        throw new NotImplementedException("Week 12: Implement DueDateTaskFilter.IsMatch");
     }
 }

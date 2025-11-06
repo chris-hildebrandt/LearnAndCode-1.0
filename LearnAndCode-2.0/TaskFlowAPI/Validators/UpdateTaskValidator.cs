@@ -16,7 +16,7 @@ namespace TaskFlowAPI.Validators;
 /// <summary>
 /// This class defines the validation rules for the `UpdateTaskRequest` DTO.
 /// It allows for different logic than the `CreateTaskValidator`, which is often necessary for update operations.
-/// Week 8 scaffolding: Students implement update-specific validation rules here.
+/// Week 10 scaffolding: Students implement update-specific validation rules here.
 /// </summary>
 public class UpdateTaskValidator : AbstractValidator<UpdateTaskRequest>
 {
@@ -33,6 +33,6 @@ public class UpdateTaskValidator : AbstractValidator<UpdateTaskRequest>
         // Another common rule for updates is to ensure that the request is not completely empty,
         // meaning the client is at least trying to update *something*.
 
-        // TODO Week 8: Require at least one property to change, validate transitions, etc.
+        // TODO Week 10: Require at least one property to change, validate transitions, etc.
     }
 }

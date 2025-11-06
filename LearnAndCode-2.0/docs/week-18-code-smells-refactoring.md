@@ -1,13 +1,16 @@
-# Week 16 · Code Smells & Refactoring
+# Week 18 · Code Smells & Refactoring
 
 ## 1. Learning Objectives
 - Identify common smells (long method, duplicate code, shotgun surgery, etc.).
 - Apply targeted refactorings without changing behaviour.
 - Document before/after impact for peer review.
 
-## 2. Reading (10 min)
-- Review smell catalogue from `Refactoring` book summary (provided) and Clean Code Appendix.
-- Summary: Recognise indicators (duplicate logic, primitive obsession, inappropriate intimacy) and apply standard refactorings.
+## 2. Reading (45 min)
+- **Clean Code Chapter 17: Smells and Heuristics.**
+- **Refactoring Guru: Code Smells** – Catalogue of common smells and refactors.
+- **Clean Code Smells and Heuristics** – Quick reference checklist.
+- **YouTube: Why Code with Code Smells is Harder to Understand** (optional, 10 min).
+- **YouTube: Code Refactoring – Learn Code Smells** (optional, 15 min).
 
 ## 3. This Week’s Work
 - Find at least **three** distinct smells in TaskFlow API (code or tests).
@@ -19,7 +22,7 @@
 - Update documentation or TODO comments if necessary.
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-16/<your-name>`.
+1. Branch `week-18/<your-name>`.
 2. Scan recent code (controllers, services, filters, validators, tests) for smells.
 3. For each smell:
    - Capture snippet before change (paste into PR description later).
@@ -40,15 +43,22 @@ dotnet test TaskFlowAPI.sln
 - No new smells introduced (e.g., giant helpers).
 
 ## 8. Submission Process
-- Commit `Week 16 – smell cleanup` (use multiple commits if helpful, e.g., one per smell).
+- Commit `Week 18 – smell cleanup` (use multiple commits if helpful, e.g., one per smell).
 - PR summary includes table:
   | Smell | Location | Refactoring | Outcome |
 - Weekly issue references same table + lessons learned.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Smell Catalog:* Log the three smells you targeted and the refactor applied.
+
+*Regression Safeguards:* Note which tests or checks gave you confidence behaviour stayed the same.
+
+Discussion Prep:
 - Which smell surprised you most?
 - How did you ensure behaviour stayed the same?
 - What tooling helped you locate smells?
+- Where do you still see opportunities for future refactors?
 
 ## 10. Time Estimate
 - 10 min – Identify smells.

@@ -11,7 +11,7 @@ namespace TaskFlowAPI.DTOs.Requests;
 /// <summary>
 /// Represents the data a client can provide to update an existing task.
 /// All properties are nullable to support partial updates (e.g., via an HTTP PATCH request).
-/// Incoming payload for updating tasks. Week 8 will add validation.
+/// Incoming payload for updating tasks. Week 10 will add validation.
 /// </summary>
 public class UpdateTaskRequest
 {

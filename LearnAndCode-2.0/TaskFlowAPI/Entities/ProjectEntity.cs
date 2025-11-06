@@ -13,11 +13,11 @@ namespace TaskFlowAPI.Entities;
 
 /// <summary>
 /// Represents a project in the database. This is a direct mapping to the `Projects` table.
-/// Week 5 scaffolding: students will enrich this entity with validation and helper methods.
+/// Week 7 scaffolding: students will enrich this entity with validation and helper methods.
 /// </summary>
 public class ProjectEntity
 {
-    // TODO Week 5: Protect invariants (non-empty name, optional description length, etc.).
+    // TODO Week 7: Protect invariants (non-empty name, optional description length, etc.).
     
     /// <summary>
     /// The unique identifier for the project. This corresponds to the Primary Key in the database table.
@@ -43,5 +43,5 @@ public class ProjectEntity
     /// </summary>
     public ICollection<TaskEntity> Tasks { get; set; } = new List<TaskEntity>();
 
-    // TODO Week 5: Introduce helper methods (AddTask, RemoveTask) once encapsulation is implemented.
+    // TODO Week 7: Introduce helper methods (AddTask, RemoveTask) once encapsulation is implemented.
 }

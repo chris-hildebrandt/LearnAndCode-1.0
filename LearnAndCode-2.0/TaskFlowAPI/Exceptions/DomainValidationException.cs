@@ -15,7 +15,7 @@ namespace TaskFlowAPI.Exceptions;
 /// <summary>
 /// Represents an error that occurs when a business rule or domain logic is violated.
 /// Inheriting from the base `Exception` class is the standard way to create a custom exception.
-/// Week 8 scaffolding: Throw when business validation fails.
+/// Week 10 scaffolding: Throw when business validation fails.
 /// Students will wire this into global exception handling middleware.
 /// </summary>
 public class DomainValidationException : Exception

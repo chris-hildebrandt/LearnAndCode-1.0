@@ -1,13 +1,16 @@
-# Week 14 · File Organization & Module Structure (Clean Code Ch. 5)
+# Week 16 · File Organization & Module Structure (Clean Code Ch. 5)
 
 ## 1. Learning Objectives
 - Restructure files so each class lives in a focused module/folder.
 - Break apart any remaining “god” files (e.g., legacy TaskService monolith, helpers).
 - Establish namespace conventions aligned with directory structure.
 
-## 2. Reading (15 min)
+## 2. Reading (45 min)
 - **Clean Code Chapter 5: Formatting (pp. 77-96)** – emphasise readability, vertical openness, and logical grouping.
-- Summary: Physical structure should mirror logical structure. Developers must discover behaviour quickly.
+- **Clean Code Chapter 8 (Boundaries)** – Refresh boundary management concepts.
+- **Designing Software with Clean Architecture** – Uncle Bob on modular architectures.
+- **Reading Clean Code: Boundaries** – Commentary on chapter application.
+- **Clean Architecture (GitHub summary)** – Additional perspective on organizing layers.
 
 ## 3. This Week’s Work
 - Move mapper, validator, business rules into dedicated folders (`Services/Tasks/Mapping`, `.../Validation`, `.../Rules`).
@@ -21,7 +24,7 @@
 - `TaskFlowAPI.Tests` (fix namespaces where necessary)
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-14/<your-name>`.
+1. Branch `week-16/<your-name>`.
 2. Inspect `TaskService` and related classes; identify any lingering nested classes or TODO comment referencing monolith.
 3. Create new subfolders: `Services/Tasks/Mapping`, `Services/Tasks/Validation`, `Services/Tasks/Rules`, `Services/Tasks/Filters` (already present—confirm naming).
 4. Move files into appropriate folders and update namespaces.
@@ -42,14 +45,21 @@ dotnet test TaskFlowAPI.sln
 - Build/tests succeed; git diff shows moves not rewrites (use `git mv`).
 
 ## 8. Submission Process
-- Commit `Week 14 – file organization` (use `git mv` to preserve history).
+- Commit `Week 16 – file organization` (use `git mv` to preserve history).
 - PR summary includes tree snippet of new structure.
 - Weekly issue attaches screenshot from IDE solution explorer.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Before/After Snapshot:* Paste the old vs. new folder path that most improved discoverability.
+
+*Namespace Strategy:* Describe your naming convention and how it maps to the new structure.
+
+Discussion Prep:
 - How does the new structure improve onboarding for new devs?
 - What naming conventions did you adopt for namespaces?
 - Did you remove any dead files? Share before/after impact.
+- What automation (solution filters, analyzers) will keep the structure from regressing?
 
 ## 10. Time Estimate
 - 10 min – Plan folder structure.

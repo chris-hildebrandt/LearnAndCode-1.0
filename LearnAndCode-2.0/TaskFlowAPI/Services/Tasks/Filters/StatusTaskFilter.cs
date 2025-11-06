@@ -9,7 +9,7 @@ namespace TaskFlowAPI.Services.Tasks.Filters;
 /// <summary>
 /// A specific implementation of ITaskFilter that checks if a task's completion status
 /// matches the desired status (either complete or incomplete).
-/// Week 10: Filter tasks by status. Students will finish implementation.
+/// Week 12: Filter tasks by status. Students will finish implementation.
 /// </summary>
 public class StatusTaskFilter : ITaskFilter
 {
@@ -34,10 +34,10 @@ public class StatusTaskFilter : ITaskFilter
     /// <returns>True if the task's status matches, otherwise false.</returns>
     public bool IsMatch(TaskEntity task)
     {
-        // This is a placeholder for the Week 10 assignment.
+        // This is a placeholder for the Week 12 assignment.
         // The goal is to implement the logic that compares the task's `IsCompleted` property
         // with the `_completed` field of this class.
-        // TODO Week 10: Implement filter using TaskEntity state.
-        throw new NotImplementedException("Week 10: Implement StatusTaskFilter.IsMatch");
+        // TODO Week 12: Implement filter using TaskEntity state.
+        throw new NotImplementedException("Week 12: Implement StatusTaskFilter.IsMatch");
     }
 }

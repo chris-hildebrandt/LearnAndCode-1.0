@@ -8,7 +8,7 @@ namespace TaskFlowAPI.Tests.Unit;
 
 /// <summary>
 /// This is a placeholder test class.
-/// Week 15 TODO: Replace this placeholder with real TaskService tests using Moq + FluentAssertions.
+/// Week 17 TODO: Replace this placeholder with real TaskService tests using Moq + FluentAssertions.
 /// </summary>
 public class PlaceholderTests
 {
@@ -16,10 +16,10 @@ public class PlaceholderTests
     /// This is a placeholder test method.
     /// The `Skip` property is used to ensure this test is not actually run, as it contains no logic.
     /// </summary>
-    [Fact(Skip = "Week 15 assignment: replace with real unit tests.")]
+    [Fact(Skip = "Week 17 assignment: replace with real unit tests.")]
     public void ReplaceMe()
     {
         // This test method is intentionally empty.
-        // Week 15 instructions guide students to delete this file and create meaningful tests.
+        // Week 17 instructions guide students to delete this file and create meaningful tests.
     }
 }

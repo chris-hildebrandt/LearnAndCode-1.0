@@ -1,13 +1,17 @@
-# Week 19 · API Design & Documentation
+# Week 21 · API Design & Documentation
 
 ## 1. Learning Objectives
 - Polish RESTful design (status codes, resource names, pagination).
 - Document API using Swagger annotations and XML comments.
 - Introduce API versioning and response shaping.
 
-## 2. Reading (15 min)
-- Microsoft REST API guidelines (summary). Focus on resource naming, pagination, and versioning strategies.
-- Swagger/OpenAPI best practices article (linked in cohort wiki).
+## 2. Reading (50 min)
+- **Microsoft REST API Guidelines** – Resource naming, versioning, pagination.
+- **REST API Tutorial (restfulapi.net)** – Core concepts and terminology.
+- **Stack Overflow Blog: Best Practices for REST API Design** – Common pitfalls.
+- **Swagger/OpenAPI Best Practices** (cohort wiki) – Documentation focus.
+- Optional: Review public API docs (GitHub, Stripe, Twitter) for inspiration.
+- Optional videos: REST API Concepts & Examples, REST API Design Best Practices.
 
 ## 3. This Week’s Work
 - Add pagination support (`page`, `pageSize`) to task listing.
@@ -24,7 +28,7 @@
 - `README.md` (API section)
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-19/<your-name>`.
+1. Branch `week-21/<your-name>`.
 2. Enable XML comments in csproj `<GenerateDocumentationFile>true</GenerateDocumentationFile>`.
 3. Install `Microsoft.AspNetCore.Mvc.Versioning` and configure `options.AssumeDefaultVersionWhenUnspecified = true`.
 4. Update controller route to include version (e.g., `[Route("api/v{version:apiVersion}/tasks")]`).
@@ -48,14 +52,21 @@ dotnet test TaskFlowAPI.sln
 - README documents major endpoints and query params.
 
 ## 8. Submission Process
-- Commit `Week 19 – API design polish`.
+- Commit `Week 21 – API design polish`.
 - PR summary includes screenshot of updated Swagger UI.
 - Weekly issue documents pagination decisions (default size, max size).
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Documentation Update:* Record the most significant addition you made to README or swagger descriptions.
+
+*Versioning Choice:* Note why you selected your versioning strategy and any migrations required later.
+
+Discussion Prep:
 - How did you choose default page size and limits?
 - What versioning strategy did you implement and why?
 - How can clients discover available filters/pagination from docs?
+- Which external API docs inspired your approach?
 
 ## 10. Time Estimate
 - 15 min – Reading + plan.

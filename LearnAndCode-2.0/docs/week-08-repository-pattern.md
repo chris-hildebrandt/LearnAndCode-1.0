@@ -1,13 +1,16 @@
-# Week 6 · Repository Pattern (Clean Code Ch. 11 systems focus)
+# Week 8 · Repository Pattern (Clean Code Ch. 11 systems focus)
 
 ## 1. Learning Objectives
 - Implement repository methods using EF Core best practices.
 - Apply async patterns (`await`, `CancellationToken`) consistently.
 - Understand how repositories isolate data access from services.
 
-## 2. Clean Code Reading (15 min)
-- **Chapter 11: Systems (pp. 155-174)** – focus on separating construction from use and keeping boundaries clean.
-- Summary: Organise code so high-level policies aren’t coupled to implementation details (like EF Core).
+## 2. Reading (45 min)
+- **Clean Code Chapter 11: Systems (pp. 155-174)** – Separate construction from use; keep boundaries clean.
+- **Microsoft Docs: Repository Pattern** – Official guidance with EF Core examples.
+- **Fowler: Service & Repository patterns** – Conceptual background (short article).
+- **Refactoring Guru: Repository Pattern** – Alternative explanations and diagrams.
+- Optional: skim `Pro .NET Design Patterns` (Repository chapter) for advanced nuances.
 
 ## 3. This Week’s Work
 - Implement all TODOs in `TaskRepository`.
@@ -20,7 +23,7 @@
 - Optional: `TaskFlowDbContext` if you need helper queries (keep minimal).
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-06/<your-name>`.
+1. Branch `week-08/<your-name>`.
 2. Implement `GetAllAsync` using ordering by `Priority` then `DueDate` then `CreatedAt`.
 3. Implement `GetByIdAsync` including related `Project` via `.Include` and `.AsNoTracking()`.
 4. Implement `CreateAsync` using `_dbContext.Tasks.AddAsync` and `SaveChangesAsync`.
@@ -34,7 +37,7 @@
 dotnet build TaskFlowAPI.sln
 dotnet test TaskFlowAPI.sln
 ```
-- (Optional) `dotnet ef database update` followed by manual GET via Swagger to ensure repository works (will still hit NotImplemented in service until Week 7, that’s expected).
+- (Optional) `dotnet ef database update` followed by manual GET via Swagger to ensure repository works (will still hit `NotImplementedException` in service until Week 9, that’s expected).
 
 ## 7. Success Criteria
 - No remaining `NotImplementedException` in `TaskRepository`.
@@ -43,14 +46,21 @@ dotnet test TaskFlowAPI.sln
 - Build/tests succeed.
 
 ## 8. Submission Process
-- Commit `Week 06 – repository implementation`.
+- Commit `Week 08 – repository implementation`.
 - PR summary must list each method and how you tested it.
 - Weekly submission issue includes code snippet of your favourite query.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Query Design:* Capture one LINQ query decision (ordering, includes) and why it matches business expectations.
+
+*Cancellation:* Note where you propagated `CancellationToken` and any gaps you spotted for future work.
+
+Discussion Prep:
 - What trade-offs did you consider regarding eager vs. lazy loading?
 - How does cancelling a request propagate through repository methods?
 - Which helper methods or extension methods might simplify repository code later?
+- What additional indexes or database constraints might you add once migrations are in play?
 
 ## 10. Time Estimate
 - 10 min – Reading + plan queries.

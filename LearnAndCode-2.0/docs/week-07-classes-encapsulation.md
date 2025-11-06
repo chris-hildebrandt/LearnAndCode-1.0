@@ -1,14 +1,16 @@
-# Week 5 · Classes & Encapsulation (Clean Code Ch. 10)
+# Week 7 · Classes & Encapsulation (Clean Code Ch. 10)
 
 ## 1. Learning Objectives
 - Convert an anemic entity into a rich domain model with invariants.
 - Hide mutable state behind methods that enforce business rules.
 - Add unit-test-friendly factory methods for creating valid tasks.
 
-## 2. Clean Code Reading (15 min)
-- **Chapter 10: Classes (pp. 137-154).**
+## 2. Reading (45 min)
+- **Clean Code Chapter 10: Classes (pp. 137-154).**
   - Focus on cohesion, encapsulation, and hiding implementation details.
-  - Summary: Classes should expose a minimal public API, keep data and behavior together, and prevent invalid states.
+- **Clean Code: Chapter 10 Classes** (summary article) – Reinforces key takeaways.
+- **System Design in Software Development** – Context on modularity and maintainability.
+- Optional: revisit Week 2 naming notes to ensure new methods and factories remain intention revealing.
 
 ## 3. This Week’s Work
 - Refactor `TaskEntity` to use private fields and guarded property access.
@@ -21,7 +23,7 @@
 - Any affected migration snapshot (run `dotnet ef migrations add` only if schema changes).
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-05/<your-name>`.
+1. Branch `week-07/<your-name>`.
 2. Replace auto-properties with private fields + public getters where necessary.
 3. Add constructor(s) or factory ensuring `Title`, `Priority`, and `ProjectId` are validated.
 4. Implement domain methods:
@@ -47,14 +49,21 @@ dotnet test TaskFlowAPI.sln
 - Build + tests succeed.
 
 ## 8. Submission Process
-- Commit `Week 05 – task entity encapsulation`.
+- Commit `Week 07 – task entity encapsulation`.
 - PR summary must describe each new domain method and rule enforced.
 - Weekly submission issue includes snippet of new `TaskEntity.Create` signature.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Invariants:* Document one invariant you enforced and the business rule it protects.
+
+*Factory vs Constructor:* Why did you choose your current creation approach? Note trade-offs for future teams.
+
+Discussion Prep:
 - Which invariants did you guard and why?
 - How would another developer know how to create a valid `TaskEntity` now?
 - What future bugs does this encapsulation prevent?
+- Where might encapsulation conflict with EF Core conveniences, and how will you mitigate that?
 
 ## 10. Time Estimate
 - 10 min – Reading + design sketch.

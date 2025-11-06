@@ -13,7 +13,7 @@ namespace TaskFlowAPI.DTOs.Requests;
 /// The properties here are nullable (`?`) to allow for more flexible validation.
 /// For example, we can provide a more user-friendly error message like "Title is required"
 /// instead of the system throwing an error because a non-nullable property was missing.
-/// Incoming payload for creating tasks. Validators will be implemented in Week 8.
+/// Incoming payload for creating tasks. Validators will be implemented in Week 10.
 /// </summary>
 public class CreateTaskRequest
 {

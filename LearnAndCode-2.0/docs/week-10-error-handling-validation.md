@@ -1,13 +1,18 @@
-# Week 8 · Error Handling & Validation (Clean Code Ch. 7)
+# Week 10 · Error Handling & Validation (Clean Code Ch. 7)
 
 ## 1. Learning Objectives
 - Implement FluentValidation rules for create/update requests.
 - Introduce domain-specific exceptions and map them to HTTP responses.
 - Configure global exception handling middleware.
 
-## 2. Clean Code Reading (15 min)
-- **Chapter 7: Error Handling (pp. 111-134)** – prefer exceptions to error codes, keep error-handling code separate from happy-path logic.
-- Summary: Throw exceptions with context, keep the happy path clean, and centralise error mapping.
+## 2. Reading (60 min)
+- **Clean Code Chapter 7: Error Handling (pp. 111-134)** – prefer exceptions to error codes, keep error-handling code separate from happy-path logic.
+- **Exception Handling Best Practices in .NET** – Pragmatic guidance for production APIs.
+- **Error Handling in Large .NET Projects** – Anti-patterns and refactoring advice.
+- **Clean Code and the Art of Exception Handling** – Reinforces Clean Code perspective.
+- **Art of Clean Code — Error Handling** – Supplementary patterns and red flags.
+- Optional: language-specific companion (e.g., **A Definitive Guide to Handling Errors in JavaScript**) if you support cross-stack clients.
+- Optional: **New Relic error monitoring docs** for teams planning observability in Week 21+.
 
 ## 3. This Week’s Work
 - Implement `CreateTaskValidator` and `UpdateTaskValidator` with actionable rules.
@@ -22,7 +27,7 @@
 - `TaskFlowAPI/Program.cs` (ensure middleware order correct)
 
 ## 5. Step-by-Step Instructions
-1. Branch `week-08/<your-name>`.
+1. Branch `week-10/<your-name>`.
 2. Implement validation rules:
    - Title: required, 3-100 chars.
    - Priority: between 0-5.
@@ -51,14 +56,21 @@ dotnet test TaskFlowAPI.sln
 - Logs contain warning/error messages for invalid requests.
 
 ## 8. Submission Process
-- Commit `Week 08 – validation and error handling`.
+- Commit `Week 10 – validation and error handling`.
 - PR summary includes sample error response JSON.
 - Weekly issue attaches screenshot of Swagger error response.
 
-## 9. Discussion Prep
+## 9. Journal and Discussion Prep
+Journal:
+*Validation Coverage:* Which rule gave you the most confidence? Note the edge case it protects.
+
+*Exception Mapping:* Record one decision you made in `UseTaskFlowExceptionHandler` and why it aligns with API consumers.
+
+Discussion Prep:
 - How did centralized error handling simplify controllers?
 - What validation rules still feel brittle or missing?
 - How will these exceptions influence future unit tests?
+- What monitoring or logging would you add before releasing to partners?
 
 ## 10. Time Estimate
 - 15 min – Reading + rule design.

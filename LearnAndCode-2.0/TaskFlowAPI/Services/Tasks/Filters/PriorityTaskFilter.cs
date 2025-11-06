@@ -9,7 +9,7 @@ namespace TaskFlowAPI.Services.Tasks.Filters;
 /// <summary>
 /// A specific implementation of ITaskFilter that checks if a task's priority
 /// is present in a given set of allowed priorities.
-/// Week 10: Filter tasks by allowed priority values.
+/// Week 12: Filter tasks by allowed priority values.
 /// </summary>
 public class PriorityTaskFilter : ITaskFilter
 {
@@ -38,10 +38,10 @@ public class PriorityTaskFilter : ITaskFilter
     /// <returns>True if the task's priority is in the allowed set, otherwise false.</returns>
     public bool IsMatch(TaskEntity task)
     {
-        // This is a placeholder for the Week 10 assignment.
+        // This is a placeholder for the Week 12 assignment.
         // The goal is to implement the logic that checks if the `_priorities` HashSet contains the task's `Priority`.
         // You should also consider what to do if the `_priorities` set is empty.
-        // TODO Week 10: Implement filter logic for priority.
-        throw new NotImplementedException("Week 10: Implement PriorityTaskFilter.IsMatch");
+        // TODO Week 12: Implement filter logic for priority.
+        throw new NotImplementedException("Week 12: Implement PriorityTaskFilter.IsMatch");
     }
 }

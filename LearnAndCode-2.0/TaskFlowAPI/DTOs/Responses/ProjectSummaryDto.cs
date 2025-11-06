@@ -13,7 +13,7 @@ namespace TaskFlowAPI.DTOs.Responses;
 /// Represents a lightweight, summarized view of a project.
 /// This is useful for API endpoints that need to display a list of projects
 /// without the overhead of including all associated tasks.
-/// A lightweight summary of a project. To be implemented in Week 11.
+/// A lightweight summary of a project. To be implemented in Week 13.
 /// </summary>
 public class ProjectSummaryDto
 {
