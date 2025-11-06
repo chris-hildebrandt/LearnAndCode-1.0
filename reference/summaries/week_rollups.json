@@ -1,0 +1,598 @@
+[
+  {
+    "week": null,
+    "label": "GENERAL",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "plain": 1,
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Learn & Code Curriculum for In Time Tec"
+    ],
+    "section_highlights": [
+      "Course Structure",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Learn & Code Curriculum for In Time Tec"
+  },
+  {
+    "week": "Week 01",
+    "label": "Week 01",
+    "file_count": 1,
+    "content_kinds": {
+      "text": 1
+    },
+    "content_subtypes": {
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 1: Introduction to In Time Tec's Quality Manifesto & Clean Code Principles by Bob Martin"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 1: Introduction to In Time Tec's Quality Manifesto & Clean Code Principles by Bob Martin"
+  },
+  {
+    "week": "Week 02",
+    "label": "Week 02",
+    "file_count": 4,
+    "content_kinds": {
+      "text": 3,
+      "code": 1
+    },
+    "content_subtypes": {
+      "markdown": 2,
+      "plain": 1,
+      "javascript": 1
+    },
+    "sample_titles": [
+      "Week 3: Meaningful Names - Refactoring Example",
+      "Week 2: Meaningful Names"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Before Refactoring",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 2: Meaningful Names, Week 3: Meaningful Names - Refactoring Example"
+  },
+  {
+    "week": "Week 03",
+    "label": "Week 03",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 1,
+      "plain": 1
+    },
+    "sample_titles": [
+      "Week 3: Foundational AI Development/Prompt Engineering for Developers"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 3: Foundational AI Development/Prompt Engineering for Developers"
+  },
+  {
+    "week": "Week 04",
+    "label": "Week 04",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 4: Functions - Refactoring Example",
+      "Week 4: Functions"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Before Refactoring",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 4: Functions, Week 4: Functions - Refactoring Example"
+  },
+  {
+    "week": "Week 05",
+    "label": "Week 05",
+    "file_count": 4,
+    "content_kinds": {
+      "text": 4
+    },
+    "content_subtypes": {
+      "markdown": 3,
+      "plain": 1
+    },
+    "sample_titles": [
+      "Week 5: GIT - Examples",
+      "Week 5: GIT - Introduction to Version Control"
+    ],
+    "section_highlights": [
+      "Acitivty set-up",
+      "During Cohort Meeting",
+      "Table of Contents",
+      "Example 1: Interactive Rebase",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 5: GIT - Examples, Week 5: GIT - Introduction to Version Control"
+  },
+  {
+    "week": "Week 06",
+    "label": "Week 06",
+    "file_count": 1,
+    "content_kinds": {
+      "text": 1
+    },
+    "content_subtypes": {
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 6: GIT - Advanced Techniques and Best Practices"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 6: GIT - Advanced Techniques and Best Practices"
+  },
+  {
+    "week": "Week 07",
+    "label": "Week 07",
+    "file_count": 3,
+    "content_kinds": {
+      "text": 3
+    },
+    "content_subtypes": {
+      "markdown": 2,
+      "plain": 1
+    },
+    "sample_titles": [
+      "Week 7: Code Review - Example",
+      "Week 7: Code Review & Technical Excellence"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Before Code Review",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 7: Code Review & Technical Excellence, Week 7: Code Review - Example"
+  },
+  {
+    "week": "Week 08",
+    "label": "Week 08",
+    "file_count": 10,
+    "content_kinds": {
+      "text": 10
+    },
+    "content_subtypes": {
+      "plain": 8,
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 8: Classes - Examples",
+      "Week 8: Classes"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Example 1: Improving Class Organization",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 8: Classes, Week 8: Classes - Examples"
+  },
+  {
+    "week": "Week 09",
+    "label": "Week 09",
+    "file_count": 6,
+    "content_kinds": {
+      "text": 2,
+      "code": 4
+    },
+    "content_subtypes": {
+      "markdown": 2,
+      "python": 4
+    },
+    "sample_titles": [
+      "Week 9: Systems - Examples",
+      "Week 9: Systems"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Example 1: Separation of Concerns in System Design",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 9: Systems, Week 9: Systems - Examples"
+  },
+  {
+    "week": "Week 10",
+    "label": "Week 10",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 10: Organizing Objects and Data Structures - Example",
+      "Week 10: Organizing Objects and Data Structures"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Before Refactoring",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 10: Organizing Objects and Data Structures, Week 10: Organizing Objects and Data Structures - Example"
+  },
+  {
+    "week": "Week 11",
+    "label": "Week 11",
+    "file_count": 1,
+    "content_kinds": {
+      "text": 1
+    },
+    "content_subtypes": {
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 11: Organizing Objects and Data Structures part 2"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 11: Organizing Objects and Data Structures part 2"
+  },
+  {
+    "week": "Week 12",
+    "label": "Week 12",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 12: Error Handling - Example",
+      "Week 12: Introduction to Error Handling"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Before Error Handling Improvements",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 12: Error Handling - Example, Week 12: Introduction to Error Handling"
+  },
+  {
+    "week": "Week 13",
+    "label": "Week 13",
+    "file_count": 1,
+    "content_kinds": {
+      "text": 1
+    },
+    "content_subtypes": {
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 13: Advanced Error Handling and Introduction to Error Reporting/Monitoring Services"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 13: Advanced Error Handling and Introduction to Error Reporting/Monitoring Services"
+  },
+  {
+    "week": "Week 14",
+    "label": "Week 14",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 14: Boundaries & Integrations - Example (3rd Party Software)",
+      "Week 14: Boundaries & Integrations"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Before Improving Boundaries and Integrations",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 14: Boundaries & Integrations, Week 14: Boundaries & Integrations - Example (3rd Party Software)"
+  },
+  {
+    "week": "Week 15",
+    "label": "Week 15",
+    "file_count": 2,
+    "content_kinds": {
+      "code": 1,
+      "text": 1
+    },
+    "content_subtypes": {
+      "csharp": 1,
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 15: Single Responsibility Principle"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 15: Single Responsibility Principle"
+  },
+  {
+    "week": "Week 16",
+    "label": "Week 16",
+    "file_count": 2,
+    "content_kinds": {
+      "code": 1,
+      "text": 1
+    },
+    "content_subtypes": {
+      "typescript": 1,
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 16: Open/Closed Principle"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 16: Open/Closed Principle"
+  },
+  {
+    "week": "Week 17",
+    "label": "Week 17",
+    "file_count": 2,
+    "content_kinds": {
+      "code": 1,
+      "text": 1
+    },
+    "content_subtypes": {
+      "csharp": 1,
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 17: Liskov Substitution Principle"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 17: Liskov Substitution Principle"
+  },
+  {
+    "week": "Week 18",
+    "label": "Week 18",
+    "file_count": 2,
+    "content_kinds": {
+      "code": 1,
+      "text": 1
+    },
+    "content_subtypes": {
+      "csharp": 1,
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 18: Interface Segregation Principle"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 18: Interface Segregation Principle"
+  },
+  {
+    "week": "Week 19",
+    "label": "Week 19",
+    "file_count": 2,
+    "content_kinds": {
+      "code": 1,
+      "text": 1
+    },
+    "content_subtypes": {
+      "typescript": 1,
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 19: Dependency Inversion Principle"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 19: Dependency Inversion Principle"
+  },
+  {
+    "week": "Week 20",
+    "label": "Week 20",
+    "file_count": 1,
+    "content_kinds": {
+      "text": 1
+    },
+    "content_subtypes": {
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 20: API Design & Integration"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 20: API Design & Integration"
+  },
+  {
+    "week": "Week 21",
+    "label": "Week 21",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 21: Unit Tests & Test-Driven Development - Example",
+      "Week 21: Unit Tests & Test-Driven Development"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Before Unit Tests & TDD",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 21: Unit Tests & Test-Driven Development, Week 21: Unit Tests & Test-Driven Development - Example"
+  },
+  {
+    "week": "Week 22",
+    "label": "Week 22",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 22: Design Patterns - Examples",
+      "Week 22: Design Patterns"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Singleton Pattern",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 22: Design Patterns, Week 22: Design Patterns - Examples"
+  },
+  {
+    "week": "Week 23",
+    "label": "Week 23",
+    "file_count": 1,
+    "content_kinds": {
+      "text": 1
+    },
+    "content_subtypes": {
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 23: Design Patterns part 2"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 23: Design Patterns part 2"
+  },
+  {
+    "week": "Week 24",
+    "label": "Week 24",
+    "file_count": 1,
+    "content_kinds": {
+      "text": 1
+    },
+    "content_subtypes": {
+      "markdown": 1
+    },
+    "sample_titles": [
+      "Week 24: Event-Driven Architecture"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 24: Event-Driven Architecture"
+  },
+  {
+    "week": "Week 25",
+    "label": "Week 25",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 25: Concurrency & Performance - Examples",
+      "Week 25: Concurrency & Performance"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Example 1: Using Parallelism for Performance Improvement",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 25: Concurrency & Performance, Week 25: Concurrency & Performance - Examples"
+  },
+  {
+    "week": "Week 26",
+    "label": "Week 26",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 26: Code Smells & Heuristics - Examples",
+      "Week 26: Code Smells & Heuristics"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Long Method",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 26: Code Smells & Heuristics, Week 26: Code Smells & Heuristics - Examples"
+  },
+  {
+    "week": "Week 27",
+    "label": "Week 27",
+    "file_count": 2,
+    "content_kinds": {
+      "text": 2
+    },
+    "content_subtypes": {
+      "markdown": 2
+    },
+    "sample_titles": [
+      "Week 27: Documentation & Communication - Examples",
+      "Week 27: Documentation & Communication"
+    ],
+    "section_highlights": [
+      "Table of Contents",
+      "Great Documentation",
+      "Table of Contents",
+      "Learning Objectives"
+    ],
+    "summary": "Covers Week 27: Documentation & Communication, Week 27: Documentation & Communication - Examples"
+  }
+]
